@@ -13,7 +13,8 @@ type FormValues = {
   message: string;
 };
 
-function debounce(func: any, ms: number) {
+// @ts-ignore
+function debounce(func, ms: number) {
   let timeout: ReturnType<typeof setTimeout>;
   return function () {
     clearTimeout(timeout);
