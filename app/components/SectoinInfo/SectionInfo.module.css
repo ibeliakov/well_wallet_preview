@@ -1,14 +1,14 @@
 .title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
-  line-height: 46.2px;
-  margin-bottom: 40px;
+  line-height: 2.8875rem;
+  margin-bottom: 2.5rem;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0.01em;
   white-space: pre-wrap;
 }

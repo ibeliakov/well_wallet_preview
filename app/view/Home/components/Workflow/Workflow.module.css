@@ -1,6 +1,6 @@
 .wrap {
-  padding-top: 100px;
-  padding-bottom: 207px;
+  padding-top: 6.25rem;
+  padding-bottom: 12.94rem;
   position: relative;
   &::after {
     content: '';
@@ -13,10 +13,10 @@
   }
 }
 .info {
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
 }
 .preview {
-  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
 }
 
 
@@ -48,26 +48,26 @@
 .column {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .option {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   max-width: 420px;
 }
 .option_title {
-  padding-top: 10px;
-  font-size: 20px;
+  padding-top: 0.625rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0.01em;
 }
 .option_description {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.375rem;
 
   letter-spacing: 0.01em;
   white-space: pre-wrap;
@@ -111,21 +111,21 @@
   z-index: 2;
   top: 183px;
   height: 160px;
-  right: 31px;
-  border-radius: 8px;
+  right: 1.9375rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 
   .today {
-    width: 72px;
-    height: 31px;
-    padding: 7px 13px 7px 13px;
+    width: 4.5rem;
+    height: 1.9375rem;
+    padding: 0.4375rem 0.8125rem;
     gap: 0px;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     background-color: #434343;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     line-height: 16.94px;
     letter-spacing: 0.01em;
@@ -134,33 +134,33 @@
   }
 
   .start {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 19.36px;
+    line-height: 1.21rem;
     letter-spacing: 0.02em;
     text-align: left;
     color:  #35A3FF;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 71px;
-    height: 43px;
+    width: 4.4375rem;
+    height: 2.6875rem;
     background: #373737;
-    border-radius: 20px 8px 20px 20px;
+    border-radius: 1.25rem 0.5rem 1.25rem 1.25rem;
   }
 
   .welcome {
-    font-size: 17px;
+    font-size: 1.0625rem;
     font-weight: 400;
-    line-height: 20.57px;
+    line-height: 21.286rem;
     letter-spacing: 0.02em;
     text-align: left;
     display: inline-flex;
-    padding-left: 12px;
+    padding-left: 0.75rem;
     align-items: center;
-    width: 319px;
-    height: 45px;
+    width: 19.94rem;
+    height: 2.81rem;
     background: #555;
-    border-radius: 8px 20px  20px 20px;
+    border-radius: 0.5rem 1.25rem  1.25rem 1.25rem;
   }
 }

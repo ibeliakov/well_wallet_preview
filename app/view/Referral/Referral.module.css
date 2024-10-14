@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  padding-top: 40px;
+  padding-top: 2.5rem;
   max-width: 1200px;
   & > * {
     position: relative;
@@ -39,8 +39,8 @@
 .explanation {
   background: var(--white);
   color: var(--black-text);
-  border-radius: 36px;
-  padding: 140px;
+  border-radius: 2.0625rem;
+  padding: 8.75rem;
   position: relative;
 
   &::before {
@@ -53,26 +53,26 @@
     background: url('/images/phone_reff.svg') no-repeat center center;
     background-size: contain;
     z-index: 1;
-    border-radius: 36px;
+    border-radius: 2.25rem;
   }
 
 }
 
 .explanation_title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
-  line-height: 46.2px;
+  line-height: 2.89rem;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .explanation_text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0.01em;
   text-align: left;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   border-top: 1px solid  #0B0B0F33;
   &:first-child {
     padding-top: 0;
@@ -89,22 +89,22 @@
 }
 
 .exemplar {
-  padding: 140px 140px 200px;
+  padding: 8.75rem 8.75rem 12.5rem;
   background: url('/images/bg_referral.svg') no-repeat;
   background-position: center -1590px;
 }
 
 .exemplar_title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 2rem;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .exemplar_content {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   & > div {
     flex-grow: 1;
     flex-basis: 0;
@@ -114,15 +114,15 @@
     }
   }
   & P {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     & b {
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 700;
-      line-height: 40px;
+      line-height: 2.5rem;
       text-align: left;
     }
   }

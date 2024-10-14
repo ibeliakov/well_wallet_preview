@@ -14,11 +14,11 @@
 }
 
 .column_1 {
-  width: 230px;
+  width: 14.375rem;
   white-space: pre-wrap;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 17.6px;
+  line-height: 1.1rem;
   text-align: left;
 
 }
@@ -50,11 +50,11 @@
 .column {
   flex-grow: 1;
   flex-basis: 0;
-  padding: 16px 0;
+  padding: 1rem 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 19.8px;
+  line-height: 1.19rem;
 
 
   &:first-child {
@@ -67,9 +67,9 @@
 }
 
 .text {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   letter-spacing: 0.01em;
   text-align: left;
   color: var(--white);
@@ -78,6 +78,6 @@
 
 .name {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
 }

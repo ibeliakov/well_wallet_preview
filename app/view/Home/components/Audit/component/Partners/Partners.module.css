@@ -19,9 +19,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
   box-sizing: border-box;
   border: 2px solid var(--white);
   background: url('/images/arrow-right-white.svg') no-repeat center center var(--background);

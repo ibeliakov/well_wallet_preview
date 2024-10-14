@@ -1,12 +1,12 @@
 .wrap {
-  padding: 40px 0 140px;
+  padding: 2.5rem 0 8.75rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .white {
-  padding-top: 140px;
+  padding-top: 8.75rem;
   background: var(--white);
   color: var(--black-text);
 }

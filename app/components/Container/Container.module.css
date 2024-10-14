@@ -2,6 +2,35 @@
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1400px;
-  padding: 0 20px;
+  max-width: var(--xxl);
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 1400px) { 
+  .container {
+    max-width: var(--xxl);
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    max-width: var(--xl);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: var(--lg);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    max-width: var(--md);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    max-width: var(--sm);
+  }
 }

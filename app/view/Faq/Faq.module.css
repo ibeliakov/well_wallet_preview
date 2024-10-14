@@ -36,8 +36,8 @@
 .preview {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  margin-bottom: 120px;
+  gap: 3.125rem;
+  margin-bottom: 7.5rem;
 }
 
 .info {
@@ -54,22 +54,22 @@
 .questions {
   background: var(--white);
   color: var(--black-text);
-  padding: 120px 140px;
-  border-radius: 36px;
+  padding: 7.5rem 8.75rem;
+  border-radius: 2.25rem;
 }
 
 .questions_title {
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 700;
-  line-height: 46.2px;
+  line-height: 2.875rem;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 140px;
+  padding: 8.75rem;
   align-items: center;
 }
 
@@ -78,26 +78,26 @@
   text-decoration: none;
   background: var(--btn-gradient);
   align-items: center;
-  gap: 20px;
-  padding: 14px 32px;
-  border-radius: 34px;
+  gap: 1.25rem;
+  padding: 0.875rem 2rem;
+  border-radius: 2.125rem;
   color: var(--white);
   &:hover {
-    box-shadow: 0px 10px 60px 0px rgba(0, 117, 223, 0.4), 0px 2px 20px 0px rgba(0, 215, 203, 0.1);
+    box-shadow: 0px 0.625rem 3.75rem 0px rgba(0, 117, 223, 0.4), 0px 2px 1.25rem 0px rgba(0, 215, 203, 0.1);
   }
 }
 
 .leave_question {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 2rem;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .leave_question_description {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 2rem;
   text-align: left;
 }

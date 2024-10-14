@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 37px;
+  gap: 2.3125rem;
 }
 .info {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 1.125rem;
   letter-spacing: 0.01em;
   text-align: left;
   color: var(--white);
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   width: 220px;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .link {
@@ -28,14 +28,14 @@
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   border: 1px solid var(--white);
   text-decoration: none;
-  border-radius: 20px;
-  padding: 8px 14px;
-  font-size: 14px;
+  border-radius: 1.25rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 0.875rem;
   letter-spacing: 0.01em;
 }
 

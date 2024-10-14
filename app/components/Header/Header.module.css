@@ -9,12 +9,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  height: 100px;
+  gap: 1.25rem;
+  height: 6.25rem;
 }
 
 .left_box {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }

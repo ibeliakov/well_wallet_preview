@@ -1,9 +1,9 @@
 .wrap {
   background: var(--white);
-  padding: 180px 0;
+  padding: 11.25rem 0;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 6.25rem;
   color: #21272A;
   
 }
@@ -12,33 +12,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   width: 400px;
 }
 
 .item_header {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   align-items: center;
 }
 
 .item_header_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 26.4px;
+  line-height: 1.65rem;
   white-space: pre-wrap;
 }
 
 .item_description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: 0.01em;
   text-align: left;
   color: #21272AB2;
@@ -53,13 +53,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .currencies_title {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 2.5rem;
   letter-spacing: 0.01em;
   text-align: center;
   white-space: pre-wrap;
@@ -73,7 +73,7 @@
 .currency {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
   justify-content: flex-end;
   text-decoration: none;
@@ -93,13 +93,13 @@
   &.small {
     width: 72px;
     height: 72px;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }
 
 .currency_name {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 19.8px;
+  line-height: 19.0.5rem;
   text-align: center;
 }

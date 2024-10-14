@@ -1,13 +1,13 @@
 .wrap {
   background: var(--white);
   color: var(--black-text);
-  padding: 40px 0 140px;
+  padding: 2.5rem 0 8.75rem;
   flex-grow: 1;
 }
 .content {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .column {
   flex-basis: 0;
@@ -23,32 +23,32 @@
 }
 
 .contact_us {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 2.5rem;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .contact_box {
   display: flex;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 .contact_label {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  line-height: 14.52px;
+  line-height: 0.9075rem;
   text-align: left;
   opacity: 0.8;
 }
 
 .contact_email {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: 21.78px;
+  line-height: 1.36rem;
   text-align: left;
   color: inherit;
 }
