@@ -13,7 +13,7 @@ type FormValues = {
   message: string;
 };
 
-function debounce<T extends Function>(
+function debounce<T extends (...args: any[]) => any>(
   func: T,
   delay: number
 ): (...args: any[]) => void {
