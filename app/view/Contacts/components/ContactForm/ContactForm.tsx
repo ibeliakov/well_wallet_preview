@@ -13,13 +13,17 @@ type FormValues = {
   message: string;
 };
 
-// @ts-ignore
-function debounce(func, ms: number) {
-  let timeout: ReturnType<typeof setTimeout>;
-  return function () {
-    clearTimeout(timeout);
-    // @ts-ignore
-    timeout = setTimeout(() => func.apply(this, arguments), ms);
+function debounce<T extends Function>(
+  func: T,
+  delay: number
+): (...args: any[]) => void {
+  let timeoutId: ReturnType<typeof setTimeout>;
+  return function (this: any, ...args: any[]) {
+    const context = this;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(context, args);
+    }, delay);
   };
 }
 
