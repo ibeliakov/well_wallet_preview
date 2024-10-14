@@ -1,0 +1,166 @@
+.wrap {
+  padding-top: 100px;
+  padding-bottom: 207px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background: url('/images/workflow_line.svg') no-repeat center bottom;
+    bottom: 80px;
+    right: calc(50% + 95px);
+    width: 1154px;
+    height: 877px;
+  }
+}
+.info {
+  margin-bottom: 70px;
+}
+.preview {
+  margin-bottom: 70px;
+}
+
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 32%;
+    background: var(--btn-gradient);
+    opacity: 0.5;
+
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 33%;
+    background: var(--btn-gradient);
+    opacity: 0.5;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 420px;
+}
+.option_title {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+}
+.option_description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  letter-spacing: 0.01em;
+  white-space: pre-wrap;
+}
+
+.example {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('/images/bg_workflow.svg') no-repeat center bottom;
+    top: -173px;
+    left: -319px;
+    width: 940px;
+    height: 1050px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 477px;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: url('/images/telegram_space.svg') no-repeat center center;
+    z-index: 2;
+  }
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  top: 183px;
+  height: 160px;
+  right: 31px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .today {
+    width: 72px;
+    height: 31px;
+    padding: 7px 13px 7px 13px;
+    gap: 0px;
+    border-radius: 100px;
+    background-color: #434343;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.01em;
+    color: #F5F5F580;
+    margin-right: 86px;
+  }
+
+  .start {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color:  #35A3FF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 71px;
+    height: 43px;
+    background: #373737;
+    border-radius: 20px 8px 20px 20px;
+  }
+
+  .welcome {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20.57px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    display: inline-flex;
+    padding-left: 12px;
+    align-items: center;
+    width: 319px;
+    height: 45px;
+    background: #555;
+    border-radius: 8px 20px  20px 20px;
+  }
+}

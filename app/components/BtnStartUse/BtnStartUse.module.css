@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--btn-gradient);
+  padding: 14px 32px;
+  border-radius: 34px;
+  color: var(--white);
+  &:hover {
+    box-shadow: 0px 10px 60px 0px rgba(0, 117, 223, 0.4), 0px 2px 20px 0px rgba(0, 215, 203, 0.1);
+  }
+}

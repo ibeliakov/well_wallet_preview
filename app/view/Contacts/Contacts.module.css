@@ -1,0 +1,54 @@
+.wrap {
+  background: var(--white);
+  color: var(--black-text);
+  padding: 40px 0 140px;
+  flex-grow: 1;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.column {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.section {
+  padding: 0 0;
+}
+
+.contact_us {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.contact_box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.contact_label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.contact_email {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: left;
+  color: inherit;
+}

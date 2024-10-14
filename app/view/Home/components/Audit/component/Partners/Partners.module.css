@@ -1,0 +1,43 @@
+.box {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin: 0 auto;
+}
+.partner {
+  display: block;
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  background: var(--background);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.link {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--white);
+  background: url('/images/arrow-right-white.svg') no-repeat center center var(--background);
+  background-size: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.wrap {
+  & :global(.react-multiple-carousel__arrow) {
+    border: 2px solid var(--white);
+  }
+  & :global(.react-multiple-carousel__arrow--left) {
+    left: 0;
+  }
+  & :global(.react-multiple-carousel__arrow--right) {
+    right: 0;
+  }
+}

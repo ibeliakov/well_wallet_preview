@@ -1,0 +1,105 @@
+.wrap {
+  background: var(--white);
+  padding: 180px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  color: #21272A;
+  
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+}
+
+.item_header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.item_header_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  white-space: pre-wrap;
+}
+
+.item_description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #21272AB2;
+
+  & > b {
+    font-weight: 700;
+
+  }
+}
+
+.currenciesBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.currencies_title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  white-space: pre-wrap;
+}
+.currencies {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: #21272A;
+  text-transform: uppercase;
+}
+
+.currency_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 3px solid #21272A;
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  &.small {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+  }
+}
+
+.currency_name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  text-decoration: none;
+}

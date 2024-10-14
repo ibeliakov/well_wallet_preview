@@ -1,0 +1,12 @@
+.wrap {
+  padding: 40px 0 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.white {
+  padding-top: 140px;
+  background: var(--white);
+  color: var(--black-text);
+}

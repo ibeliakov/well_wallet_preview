@@ -1,0 +1,17 @@
+.wrap {
+  padding-bottom: 25px;
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 36px;
+  color: var(--red);
+}
+

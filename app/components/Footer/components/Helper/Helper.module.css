@@ -1,0 +1,51 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 37px;
+}
+.info {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+}
+.title {
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  gap: 8px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--white);
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.support {
+  background: var(--white);
+  color: var(--black);
+}
+
+
+
+.mail {
+  color: var(--white);
+}

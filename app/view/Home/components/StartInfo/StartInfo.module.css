@@ -1,0 +1,90 @@
+.title {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 32px;
+  height: 340px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2304px;
+    height: 493px;
+    background: url('/images/line_main.svg') no-repeat;
+    top: 83px;
+    left: -650px;
+    z-index: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    background: url('/images/planets.svg') no-repeat;
+    top: 0;
+    left: calc(50% - 170px);
+    z-index: 0;
+  }
+}
+
+.option_line {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  gap: 180px;
+}
+.option_line_1 {
+  gap: 20px;
+}
+
+.option_item {
+  display: inline-flex;
+  background: var(--btn-gradient);
+  padding: 1px;
+  border-radius: 34px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+.option_item_content {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 16px;
+  background: var(--background);
+  position: relative;
+  border-radius: 34px;
+}
+
+.option_item_text {
+  width: 200px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: center;
+}

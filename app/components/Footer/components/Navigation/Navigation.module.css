@@ -1,0 +1,26 @@
+.list {
+  columns: 210px 2;
+  column-gap: 0;
+  max-width: 420px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  opacity: 0.8;
+  text-decoration: none;
+  margin-bottom: 20px;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: var(--btn-gradient);
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+}

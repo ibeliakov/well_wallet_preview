@@ -1,0 +1,23 @@
+.btn {
+  font-size: 16px;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 12px 20px;
+  border-radius: 36px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+
+  &:hover {
+    border: 0px solid var(--white);
+    padding: 14px 22px;
+    background: var(--btn-gradient);   
+    transition: background-color 0.7s;
+  }
+}
