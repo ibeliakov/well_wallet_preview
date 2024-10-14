@@ -2,7 +2,6 @@ import { FC } from "react";
 import { Container } from "..";
 
 import styles from "./SectionInfo.module.css";
-import classNames from "classnames";
 
 type Props = {
   title: string;
