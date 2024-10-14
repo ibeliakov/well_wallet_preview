@@ -24,7 +24,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       assets: "USDT \nTether US",
       contents: [
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />{" "}
             <span>
               <b>USDT</b> (ERC-20)
@@ -36,7 +36,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
           "min 10 USDT",
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
             <span>
               <b>USDT</b> (TRC-20)
@@ -48,40 +48,64 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
           "min 10 USDT",
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
             <span>
               <b>USDT</b> (TRON)
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
             <span>
               <b>USDT</b> (SOL)
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
             <span>
               <b>USDT</b> (BEP-20)
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
       ],
     },
@@ -89,7 +113,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       assets: "TRX \nTron",
       contents: [
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
             <span>
               <b>TRX</b> (TRC-20)
@@ -101,28 +125,44 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
           "min 10 TRX",
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
             <span>
               <b>TRX</b> (SOL)
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
             <span>
               <b>TRX</b> (BEP-20)
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
       ],
     },
@@ -130,7 +170,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       assets: "ETH \nEthereum",
       contents: [
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/eth.svg" height={32} width={32} alt="icon" />
             <span>
               <b>ETH</b> (ERC20)
@@ -147,16 +187,24 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       assets: "BTC \nBitcoin",
       contents: [
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/btc.svg" height={32} width={32} alt="icon" />
             <span>
               <b>Bitcoin</b>
             </span>
           </div>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
-          <span className={styles.text}>{t("soon")}</span>,
+          <span className={styles.text} key={1}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={2}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={3}>
+            {t("soon")}
+          </span>,
+          <span className={styles.text} key={4}>
+            {t("soon")}
+          </span>,
         ],
       ],
     },
@@ -164,7 +212,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       assets: "BNB \nBNB",
       contents: [
         [
-          <div className={styles.name}>
+          <div className={styles.name} key={0}>
             <Image src="/images/bnb.svg" height={32} width={32} alt="icon" />
             <span>
               <b>BNB</b> (BEP-20)
@@ -196,12 +244,12 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
           ))}
         </div>
       </div>
-      {tableContent.map((row, i) => (
-        <div className={styles.row} key={i}>
+      {tableContent.map((row, j) => (
+        <div className={styles.row} key={j}>
           <div className={styles.column_1}>{row.assets}</div>
           <div className={styles.columns_group}>
-            {row.contents.map((content, j) => (
-              <div className={styles.columns} key={j}>
+            {row.contents.map((content, l) => (
+              <div className={styles.columns} key={l}>
                 {content.map((text, k) => (
                   <div className={styles.column} key={k}>
                     {text}
