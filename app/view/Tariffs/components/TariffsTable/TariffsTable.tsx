@@ -1,6 +1,6 @@
 "use client";
 import { Container } from "@/app/components";
-import { FC, use, useCallback, useEffect, useMemo, useState } from "react";
+import { FC, useCallback, useEffect, useMemo, useState } from "react";
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
