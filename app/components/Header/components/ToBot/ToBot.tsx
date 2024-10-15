@@ -14,9 +14,7 @@ type Props = Readonly<{
 }>;
 
 const ToBot: FC<Props> = ({ resizeText, isFull }) => {
-  const [showText, setShowText] = useState(
-    !resizeText || window.innerWidth > 1200
-  );
+  const [showText, setShowText] = useState(true);
   const t = useTranslations("common");
 
   useWindowOnEvent(
@@ -25,7 +23,7 @@ const ToBot: FC<Props> = ({ resizeText, isFull }) => {
       if (!resizeText) {
         return;
       }
-      setShowText(window.innerWidth > 1200);
+      setShowText(typeof window !== "undefined" && window?.innerWidth > 1200);
     },
     [setShowText, resizeText],
     true

@@ -4,14 +4,15 @@ import { Logo } from "../..";
 import { useWindowOnEvent } from "@/app/hooks";
 
 const DynamicLogo: FC = () => {
-  const [isFull, setIsFull] = useState(
-    window.innerWidth > 1200 || window.innerWidth < 768
-  );
+  const [isFull, setIsFull] = useState(true);
 
   useWindowOnEvent(
     "resize",
     () => {
-      setIsFull(window.innerWidth > 1200 || window.innerWidth <= 768);
+      setIsFull(
+        typeof window !== "undefined" &&
+          (window?.innerWidth > 1200 || window?.innerWidth <= 768)
+      );
     },
     [setIsFull],
     true

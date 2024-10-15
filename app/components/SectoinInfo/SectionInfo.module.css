@@ -19,3 +19,9 @@
   letter-spacing: 0.01em;
   white-space: pre-wrap;
 }
+
+@media screen and (max-width: 992px) {
+  .description {
+    white-space: normal;
+  }
+}

@@ -1,10 +1,11 @@
+"use client";
 import { Container } from "@/app/components";
-import { FC } from "react";
+import { FC, useMemo, useState } from "react";
 
-import styles from "./TariffsTable.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import classNames from "classnames";
+import styles from "./TariffsTable.module.css";
 
 type Props = {
   isBlack?: boolean;
@@ -12,6 +13,7 @@ type Props = {
 
 const TariffsTable: FC<Props> = ({ isBlack = false }) => {
   const t = useTranslations("tariffs");
+  const [shows, setShows] = useState<string[]>([]);
   const headers = [
     "name",
     "commission_replenishment",
@@ -21,7 +23,15 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
   ].map((header) => t(header));
   const tableContent = [
     {
-      assets: "USDT \nTether US",
+      key: "usdt",
+      assets: (
+        <div className={styles.assets}>
+          <div className={classNames(styles.text, styles.subText)}>
+            {t("assets")}
+          </div>
+          <b>USDT </b>Tether
+        </div>
+      ),
       contents: [
         [
           <div className={styles.name} key={0}>
@@ -33,7 +43,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />{" "}
             <span>
-              <b>USDT</b> (ERC-20)
+              <b>USDT</b> <span className={styles.no_break}>(ERC-20)</span>
             </span>
           </div>,
           "1 USDT",
@@ -51,7 +61,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>USDT</b> (TRC-20)
+              <b>USDT</b> <span className={styles.no_break}>(TRC-20)</span>
             </span>
           </div>,
           "0,5 USDT",
@@ -69,7 +79,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>USDT</b> (TRON)
+              <b>USDT</b> <span className={styles.no_break}>(TRON)</span>
             </span>
           </div>,
           <span className={styles.text} key={1}>
@@ -140,7 +150,15 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       ],
     },
     {
-      assets: "TRX \nTron",
+      key: "trx",
+      assets: (
+        <div className={styles.assets}>
+          <div className={classNames(styles.text, styles.subText)}>
+            {t("assets")}
+          </div>
+          <b>TRX </b>Tron
+        </div>
+      ),
       contents: [
         [
           <div className={styles.name} key={0}>
@@ -152,7 +170,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>TRX</b> (TRC-20)
+              <b>TRX</b> <span className={styles.no_break}>(TRC-20)</span>
             </span>
           </div>,
           "4 TRX",
@@ -170,7 +188,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>TRX</b> (SOL)
+              <b>TRX</b> <span className={styles.no_break}>(SOL)</span>
             </span>
           </div>,
           <span className={styles.text} key={1}>
@@ -196,7 +214,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>TRX</b> (BEP-20)
+              <b>TRX</b> <span className={styles.no_break}>(BEP-20)</span>
             </span>
           </div>,
           <span className={styles.text} key={1}>
@@ -215,7 +233,15 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       ],
     },
     {
-      assets: "ETH \nEthereum",
+      key: "eth",
+      assets: (
+        <div className={styles.assets}>
+          <div className={classNames(styles.text, styles.subText)}>
+            {t("assets")}
+          </div>
+          <b>ETH </b>Ethereum
+        </div>
+      ),
       contents: [
         [
           <div className={styles.name} key={0}>
@@ -227,7 +253,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>ETH</b> (ERC20)
+              <b>ETH</b> <span className={styles.no_break}>(ERC20)</span>
             </span>
           </div>,
           "0,00027 ETH",
@@ -238,7 +264,15 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       ],
     },
     {
-      assets: "BTC \nBitcoin",
+      key: "btc",
+      assets: (
+        <div className={styles.assets}>
+          <div className={classNames(styles.text, styles.subText)}>
+            {t("assets")}
+          </div>
+          <b>BTC </b>Bitcoin
+        </div>
+      ),
       contents: [
         [
           <div className={styles.name} key={0}>
@@ -269,7 +303,15 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       ],
     },
     {
-      assets: "BNB \nBNB",
+      key: "bnb",
+      assets: (
+        <div className={styles.assets}>
+          <div className={classNames(styles.text, styles.subText)}>
+            {t("assets")}
+          </div>
+          <b>BNB </b>BNB
+        </div>
+      ),
       contents: [
         [
           <div className={styles.name} key={0}>
@@ -281,7 +323,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               alt="icon"
             />
             <span>
-              <b>BNB</b> (BEP-20)
+              <b>BNB</b> <span className={styles.no_break}>(BEP-20)</span>
             </span>
           </div>,
           "0,02 BNB",
@@ -292,13 +334,24 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       ],
     },
   ];
+
+  const toggleShow = (key: string) => {
+    console.log(key);
+    setShows((prev) => {
+      if (prev.includes(key)) {
+        return prev.filter((item) => item !== key);
+      }
+      return [...prev, key];
+    });
+  };
+
   return (
     <Container
       className={classNames(styles.table, {
         [styles.black]: isBlack,
       })}
     >
-      <div className={styles.row}>
+      <div className={classNames(styles.row, styles.header)}>
         <div className={styles.column_1}>
           <div className={styles.text}>{t("assets")}</div>
         </div>
@@ -317,8 +370,24 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
             {row.contents.map((content, l) => (
               <div className={styles.columns} key={l}>
                 {content.map((text, k) => (
-                  <div className={styles.column} key={k}>
+                  <div
+                    className={classNames(styles.column, {
+                      [styles.hideCol]: !shows.includes(`${row.key}-${l}`),
+                    })}
+                    onClick={
+                      k === 0
+                        ? () => {
+                            toggleShow(`${row.key}-${l}`);
+                          }
+                        : undefined
+                    }
+                    key={k}
+                  >
+                    <div className={classNames(styles.text, styles.subText)}>
+                      {headers[k]}
+                    </div>
                     {text}
+                    {k === 0 && <span className={styles.arrow} />}
                   </div>
                 ))}
               </div>

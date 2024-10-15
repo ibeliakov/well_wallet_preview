@@ -12,7 +12,7 @@ const LeftBtns: FC = () => {
   useWindowOnEvent(
     "resize",
     () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(typeof window !== "undefined" && window?.innerWidth <= 768);
     },
     [setIsMobile],
     true
