@@ -4,7 +4,7 @@ import classNames from "classnames";
 import { DynamicLogo, LeftBtns, Navigation } from "./components";
 
 import styles from "./Header.module.css";
-import { Container, Logo } from "..";
+import { Container } from "..";
 
 const Header: FC = () => {
   return (

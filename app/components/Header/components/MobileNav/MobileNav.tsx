@@ -1,5 +1,5 @@
 "use client";
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import { useNavigationList } from "@/app/hooks";
 import { Container, Logo } from "@/app/components";
 
