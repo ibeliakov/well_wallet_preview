@@ -3,7 +3,8 @@
   font-weight: 700;
   line-height: 4.5rem;
   text-align: center;
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -35,19 +36,32 @@
     height: 493px;
     background: url('/images/line_main.svg') no-repeat;
     top: 83px;
-    left: -650px;
+    left: calc(50% - 1350px);
     z-index: 0;
   }
   &::after {
     content: '';
     position: absolute;
-    width: 340px;
-    height: 340px;
+    width: 21.25rem;
+    height: 21.25rem;
     background: url('/images/planets.svg') no-repeat;
+    background-size: contain;
     top: 0;
-    left: calc(50% - 170px);
+    left: calc(50% - 10.625rem);
     z-index: 0;
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .option {
+    &::before {
+      top: 63px;
+    }
+    &::after {
+      top: 5px;
+    }
+  }
+  
 }
 
 .option_line {

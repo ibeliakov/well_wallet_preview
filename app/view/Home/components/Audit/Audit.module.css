@@ -1,14 +1,26 @@
 .wrap {
-  padding: 200px 0;
+  padding: 12.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 6.25rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrap {
+    padding: 6.25rem 0;
+  }
+
 }
 
 .container {
-  max-width: 1200px;
   position: relative;
   z-index: 1;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .standards {
@@ -89,6 +101,12 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .article {
+    padding: 3.75rem 2.5rem;
+  }
+}
+
 .article_title {
   font-size: 42px;
   font-weight: 700;
@@ -109,7 +127,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  width: 555px;
+  width: 34rem;
 }
 
 .article_wrap {
@@ -150,6 +168,13 @@
   .phone {
     position: relative;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .article_preview {
+    zoom: 0.9;
+    margin-right: -50px;
   }
 }
 

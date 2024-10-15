@@ -9,8 +9,16 @@ import styles from "./Partners.module.css";
 const Partners: FC = () => {
   const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 0 },
+      breakpoint: { max: 4000, min: 1200 },
       items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1200, min: 992 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 992, min: 0 },
+      items: 2,
     },
   };
   const partners = [

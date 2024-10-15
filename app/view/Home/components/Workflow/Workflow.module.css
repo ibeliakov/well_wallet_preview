@@ -2,6 +2,7 @@
   padding-top: 6.25rem;
   padding-bottom: 12.94rem;
   position: relative;
+  overflow: hidden;
   &::after {
     content: '';
     position: absolute;
@@ -19,7 +20,6 @@
   margin-bottom: 4.375rem;
 }
 
-
 .options {
   display: flex;
   justify-content: space-between;
@@ -32,6 +32,7 @@
     top: 32%;
     background: var(--btn-gradient);
     opacity: 0.5;
+    z-index: -1;
 
   }
   &::after {
@@ -42,13 +43,39 @@
     bottom: 33%;
     background: var(--btn-gradient);
     opacity: 0.5;
+    z-index: -1;
   }
+}
+
+@media screen and (max-width: 1400px) {
+  .options {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 .column {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex-direction: row;
+    &:last-child {
+      padding-top: 150px;
+    }
+  }
 }
 
 .option {
@@ -57,6 +84,14 @@
   gap: 0.625rem;
   max-width: 420px;
 }
+
+@media screen and (max-width: 992px) {
+  .option {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+}
+
 .option_title {
   padding-top: 0.625rem;
   font-size: 1.25rem;
@@ -73,8 +108,22 @@
   white-space: pre-wrap;
 }
 
+@media screen and (max-width: 1400px) {
+  .option_description {
+    font-size: 1rem;
+    height: 6.25rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .option_description {
+    height: 10rem;
+  }
+}
+
 .example {
   position: relative;
+  z-index: 0;
 
   &::before {
     content: '';
@@ -95,6 +144,16 @@
     background: url('/images/telegram_space.svg') no-repeat center center;
     z-index: 2;
   }
+}
+
+@media screen and (max-width: 992px) {
+  .example {
+    &::before {
+      top:60px;
+      zoom: 0.7;
+    }
+  }
+  
 }
 
 .phone {
