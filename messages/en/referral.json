@@ -1,20 +1,20 @@
 {
   "referral": {
-    "title": "Условия партнерской программы",
-    "description": "Приглашаем вас стать участником нашей партнерской программы и получать вознаграждения за привлечение новых пользователей. \n\nЗа каждого нового пользователя, зарегистрировавшегося по вашей реферальной ссылке, вы будете получать 10% от всех комиссий, уплаченных им в процессе использования кошелька. Комиссии начисляются за операции по вводу, выводу и обмену криптовалют.",
+    "title": "Terms of the partnership program",
+    "description": "ПWe invite you to join our partnership program and earn rewards for bringing in new users. \n\nFor each new user who registers using your referral link, you will receive 10% of all fees paid by them while using the wallet. Fees are charged for deposits, withdrawals, and cryptocurrency exchanges.",
     "explanation": {
-      "title": "Механизм работы программы:",
-      "p_1": "<b>Пригласите нового пользователя в криптокошелек через вашу</b>",
-      "link": "реферальную ссылку",
-      "p_2": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: <b>Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT)</b> для отправки, получения и обмена активов.",
-      "p_3": "После того как реферал начнет совершать операции (ввод, вывод, обмен), <b>вам будет начисляться 10% от каждой оплаченной им комиссии.</b> Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции.",
-      "p_4": "Бонусные начисления автоматически суммируются на вашем партнерском счете. \n<b>Когда баланс достигнет 10 USDT, вы сможете вывести средства на свой кошелек в Telegram.</b>",
-      "p_5": "В разделе <b>«Партнерская программа»</b> вы сможете увидеть вашу персональную реферальную ссылку, а также следить за количеством привлеченных пользователей, размером начисленных бонусов и доступной суммой для вывода."
+      "title": "How the program works:",
+      "p_1": "<b>Invite a new user to the crypto wallet through your</b>",
+      "link": "referral link",
+      "p_2": "The new user will be able to easily register in our wallet on the Telegram platform and start using cryptocurrencies such as:​ <b>Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT)</b> to send, receive, and exchange assets.",
+      "p_3": "Once your referral starts making transactions (depositing, withdrawing, exchanging), you will receive 10% of each fee paid by them. Bonuses are credited in USDT TRON at the current exchange rate at the time of the transaction.",
+      "p_4": "Bonus credits are automatically accumulated in your partner account. \n<b>When the balance reaches 10 USDT, you will be able to withdraw the funds to your wallet in Telegram.</b>",
+      "p_5": "In the “Partnership Program” section, you will be able to see your personal referral link, as well as track the number of users you have referred, the amount of bonuses accrued, and the available amount for withdrawal.​"
     },
     "exemplar" : {
-      "title": "Пример:",
-      "p_1": "Если ваш реферал совершит операцию обмена и заплатит комиссию в размере 5 USDT,",
-      "p_2": "вы получите 0,5 USDT (10%)"
+      "title": "Example:",
+      "p_1": "If your referral makes an exchange transaction and pays a fee of 5 USDT,",
+      "p_2": "you will receive 0.5 USDT (10%)."
 
     }
   }
