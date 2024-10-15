@@ -4,4 +4,14 @@
   justify-content: space-between;
   color: var(--white);
   text-decoration: none;
+  flex-shrink: 0;
+  width: 2.357rem;
+  height: 2.375rem;
+  background: url('/images/logo.svg') no-repeat center center;
+  background-size: contain;
+
+  &.full {
+    width: 11.875rem;
+    background-image: url('/images/full_logo.svg');
+  }
 }

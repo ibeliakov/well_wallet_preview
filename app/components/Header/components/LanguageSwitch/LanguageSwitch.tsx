@@ -51,7 +51,13 @@ const LanguageSwitch: FC = () => {
         })}
         onClick={() => setShow((show) => !show)}
       >
-        <Image src={icon} alt="Well Wallet" width={20} height={20} />
+        <Image
+          className={styles.icon}
+          src={icon}
+          alt="Well Wallet"
+          width={20}
+          height={20}
+        />
       </div>
       <div className={classNames(styles.list, { [styles.show]: show })}>
         <div className={styles.list_text}>{t("language")}:</div>

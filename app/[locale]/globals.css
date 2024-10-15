@@ -16,7 +16,7 @@
   font-size: 16px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   :root {
     font-size: 14px;
   }

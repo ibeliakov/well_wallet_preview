@@ -3,6 +3,7 @@ import { FC, useCallback, useState } from "react";
 import Form, { Field, useForm } from "rc-field-form";
 import { useTranslations } from "next-intl";
 import { FieldData } from "rc-field-form/es/interface";
+import debounce from "@/app/utils/debounce";
 import FieldWrap from "../FieldWrap";
 import classNames from "classnames";
 
@@ -12,20 +13,6 @@ type FormValues = {
   email: string;
   message: string;
 };
-
-function debounce<T extends (...args: any[]) => any>(
-  func: T,
-  delay: number
-): (...args: any[]) => void {
-  let timeoutId: ReturnType<typeof setTimeout>;
-  return function (this: any, ...args: any[]) {
-    const context = this;
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      func.apply(context, args);
-    }, delay);
-  };
-}
 
 const Input = ({ value = "", ...props }) => {
   return <input className={styles.input} value={value} {...props} />;

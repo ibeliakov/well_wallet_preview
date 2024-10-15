@@ -1,14 +1,24 @@
 .wrap {
   background: var(--white);
   color: var(--black-text);
-  padding: 2.5rem 0 100px;
+  padding: 2.5rem 0 6.25rem;
+}
+@media screen and (max-width: 1400px) {
+  .wrap {
+    padding: 0 0 2rem;
+  }
 }
 
 .content {
-  max-width: 1140px;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+  .content {
+    max-width: 1140px;
+  }
 }
 
 .options {
@@ -23,6 +33,16 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+@media screen and (max-width: 992px) {
+  .options {
+    flex-wrap: wrap;
+  }
+  .option {
+    flex-basis: auto;
+    width: calc(50% - 1.25rem);
+  }
 }
 
 .option_title {

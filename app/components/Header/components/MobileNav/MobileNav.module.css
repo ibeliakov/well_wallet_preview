@@ -1,0 +1,98 @@
+.menu_back {
+  padding-right: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+  max-width: 365px;
+  width: 100%;
+  background: var(--background);
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(6.25rem + 1px);
+  border-bottom: 1px solid var(--white);
+  margin-bottom: 1.25rem;
+}
+
+.menu_body {
+  max-height: calc(100% - 6.25rem - 1px - 1.25rem);
+  overflow-y: auto;
+  padding-bottom: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding: 2rem 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 1rem);
+    background: url('/images/dashed-line.svg') no-repeat center center;
+    background-size: contain;
+    height: 1px;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 3.25rem;
+  width: 3.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn_close {
+  display: inline-flex;
+  position: relative;
+  height: 3.25rem;
+  width: 3.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  .line {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 1px)
+  }
+  & .line:first-child {
+    transform: rotate(45deg);
+  }
+  & .line:last-child {
+    transform: rotate(-45deg);
+  }
+}
+.line {
+  height: 2px;
+  width: 50%;
+  background: var(--white);
+}

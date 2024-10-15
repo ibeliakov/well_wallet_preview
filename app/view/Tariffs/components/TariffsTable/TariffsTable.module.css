@@ -67,6 +67,8 @@
 }
 
 .text {
+  display: inline-flex;
+  align-items: center;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
@@ -80,4 +82,9 @@
   display: flex;
   gap: 1.25rem;
   align-items: center;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
 }

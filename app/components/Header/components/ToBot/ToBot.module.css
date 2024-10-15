@@ -14,10 +14,27 @@
   background-color: transparent;
   transition: background-color 0.3s;
 
+  &.full {
+    width: 100%;
+  }
+
+  
   &:hover {
     border: 0px solid var(--white);
     padding: 0.875rem 1.375rem;
     background: var(--btn-gradient);   
     transition: background-color 0.7s;
   }
+
+  &.without_text {
+    padding: 0.75rem;
+    &:hover {
+      padding: 0.875rem;
+    }
+  }
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }

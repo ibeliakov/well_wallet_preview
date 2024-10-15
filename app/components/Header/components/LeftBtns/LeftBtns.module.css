@@ -1,0 +1,13 @@
+.left_box {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  .left_box {
+    gap: 1rem;
+  }
+}

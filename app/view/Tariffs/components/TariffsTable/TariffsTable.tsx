@@ -25,7 +25,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       contents: [
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />{" "}
+            <Image
+              className={styles.icon}
+              src="/images/usdt.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />{" "}
             <span>
               <b>USDT</b> (ERC-20)
             </span>
@@ -37,7 +43,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/usdt.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>USDT</b> (TRC-20)
             </span>
@@ -49,7 +61,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/usdt.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>USDT</b> (TRON)
             </span>
@@ -69,7 +87,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/usdt.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>USDT</b> (SOL)
             </span>
@@ -89,7 +113,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/usdt.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/usdt.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>USDT</b> (BEP-20)
             </span>
@@ -114,7 +144,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       contents: [
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/trx.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>TRX</b> (TRC-20)
             </span>
@@ -126,7 +162,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/trx.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>TRX</b> (SOL)
             </span>
@@ -146,7 +188,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
         ],
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/trx.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/trx.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>TRX</b> (BEP-20)
             </span>
@@ -171,7 +219,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       contents: [
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/eth.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/eth.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>ETH</b> (ERC20)
             </span>
@@ -188,7 +242,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       contents: [
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/btc.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/btc.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>Bitcoin</b>
             </span>
@@ -213,7 +273,13 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
       contents: [
         [
           <div className={styles.name} key={0}>
-            <Image src="/images/bnb.svg" height={32} width={32} alt="icon" />
+            <Image
+              className={styles.icon}
+              src="/images/bnb.svg"
+              height={32}
+              width={32}
+              alt="icon"
+            />
             <span>
               <b>BNB</b> (BEP-20)
             </span>

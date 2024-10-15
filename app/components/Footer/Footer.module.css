@@ -36,3 +36,9 @@
   gap: 1.25rem;
   z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
