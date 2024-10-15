@@ -1,5 +1,4 @@
 .container {
-  max-width: 1200px;
   position: relative;
 
   & > * {
@@ -17,7 +16,6 @@
     background: url('/images/bg_faq.svg') no-repeat;
     background-position: -180px -530px;
     z-index: 0;
-
   }
 
   &::after {
@@ -33,22 +31,89 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    &::after {
+      top: -380px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    &::after {
+      right: -522px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    &::after {
+      top: -120px;
+    }
+    &::before {
+      top: 350px;
+    }
+  }
+}
+
 .preview {
   display: flex;
   justify-content: space-between;
   gap: 3.125rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .preview {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .preview {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .info {
-  padding-top: 50px;
+  padding-top: 3.125rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .info {
+    padding-top: 0rem;
+  }
 }
 
 .image {
   flex-shrink: 0;
-  width: 440px;
+  width: 100%;
+  max-width: 440px;
   height: 350px;
   background: url('/images/faq_image.svg') no-repeat center center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1400px) {
+  .image {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .image {
+    max-width: 315px;
+  }
 }
 
 .questions {
@@ -56,6 +121,12 @@
   color: var(--black-text);
   padding: 7.5rem 8.75rem;
   border-radius: 2.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .questions {
+    padding: 2.5rem;
+  }
 }
 
 .questions_title {
@@ -71,6 +142,19 @@
   justify-content: space-between;
   padding: 8.75rem;
   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .btn {
