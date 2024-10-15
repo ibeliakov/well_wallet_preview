@@ -68,8 +68,8 @@
       "title": "Security audit",
       "description": "ur platform has undergone a comprehensive security audit conducted by a leading cybersecurity firm—Cobweb Security. The purpose of the audit was to assess the security of our services for processing cryptocurrency transactions. As a result of the audit, WellWallet achieved compliance with security standards:"
     },
-    "OWASP": "a list of the most critical security threats to web applications, confirming that our system has been tested for key known vulnerabilities and complies with best practices in security.​",
-    "ISO_27001": "an international standard for information security management that defines the requirements for establishing, implementing, and maintaining an information security management system.​",
+    "owasp": "a list of the most critical security threats to web applications, confirming that our system has been tested for key known vulnerabilities and complies with best practices in security.​",
+    "iso_27001": "an international standard for information security management that defines the requirements for establishing, implementing, and maintaining an information security management system.​",
     "pci_dss": "a data security standard aimed at ensuring the protection of confidential information and the secure processing of transactions when dealing with digital assets and payment systems.​",
     "details": "Details",
     "article": {
