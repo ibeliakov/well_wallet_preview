@@ -61,7 +61,15 @@
       top: 5px;
     }
   }
-  
+}
+
+@media screen and (max-width: 1200px) {
+  .option {
+    &::before {
+      display: none;
+    }
+  }
+
 }
 
 .option_line {

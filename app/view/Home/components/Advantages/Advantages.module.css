@@ -27,6 +27,12 @@
   width: calc(33.3333% - 2.5rem);
 }
 
+@media screen and (max-width: 768px) {
+  .item {
+    width: calc(50% - 2.5rem);
+  }
+}
+
 .item_header {
   display: flex;
   gap: 0.625rem;
