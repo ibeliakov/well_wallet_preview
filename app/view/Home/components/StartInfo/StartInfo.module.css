@@ -8,6 +8,13 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
 .btnBox {
   display: flex;
   justify-content: center;
@@ -26,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.875rem;
   padding-top: 2rem;
   height: 340px;
   &::before {
@@ -73,13 +79,16 @@
 }
 
 .option_line {
-  display: flex;
   position: relative;
   z-index: 1;
-  gap: 11.25rem;
+  & > *:first-child {
+    margin-right: 11.25rem;
+  }
 }
 .option_line_1 {
-  gap: 1.25rem;
+  & > *:first-child {
+    margin-right: 1.25rem;
+  }
 }
 
 .option_item {
@@ -87,10 +96,23 @@
   background: var(--btn-gradient);
   padding: 1px;
   border-radius: 2.125rem;
+  margin-bottom: 1.875rem;
   overflow: hidden;
   z-index: 1;
   position: relative;
+  float: left;
+  &:last-child {
+    float: right;
+  }
 }
+
+@media screen and (max-width: 576px) {
+  .option_item {
+    margin-right: 0 !important;
+  }
+
+}
+
 .option_item_content {
   box-sizing: border-box;
   display: flex;

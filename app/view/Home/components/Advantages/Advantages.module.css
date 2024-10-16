@@ -33,6 +33,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .item {
+    width: 100%;
+  }
+}
+
 .item_header {
   display: flex;
   gap: 0.625rem;
@@ -78,7 +84,13 @@
 .currencies {
   display: flex;
   justify-content: center;
-  gap: 48px;
+  gap: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .currencies {
+    flex-wrap: wrap;
+  }
 }
 
 .currency {

@@ -180,11 +180,17 @@
 @media screen and (max-width: 992px) {
   .example {
     &::before {
-      top:60px;
+      top: 60px;
       zoom: 0.7;
     }
   }
-  
+}
+
+@media screen and (max-width: 576px) {
+  .example {
+    zoom: 0.8
+  }
+
 }
 
 .phone {

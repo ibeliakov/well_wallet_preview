@@ -71,6 +71,12 @@ body {
   flex-direction: column;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .home {
   &::after, &::before {
     content: '';

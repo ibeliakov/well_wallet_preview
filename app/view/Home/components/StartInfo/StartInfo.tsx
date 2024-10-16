@@ -15,7 +15,7 @@ const StartInfo: FC = () => {
           <BtnStartUse />
         </div>
         <div className={styles.option}>
-          <div className={styles.option_line}>
+          <div className={classNames(styles.option_line, "clearfix")}>
             <div className={styles.option_item}>
               <div className={styles.option_item_content}>
                 <Image
@@ -41,7 +41,13 @@ const StartInfo: FC = () => {
               </div>
             </div>
           </div>
-          <div className={classNames(styles.option_line, styles.option_line_1)}>
+          <div
+            className={classNames(
+              styles.option_line,
+              styles.option_line_1,
+              "clearfix"
+            )}
+          >
             <div className={styles.option_item}>
               <div className={styles.option_item_content}>
                 <Image
