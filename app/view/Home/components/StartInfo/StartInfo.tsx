@@ -26,7 +26,9 @@ const StartInfo: FC = () => {
       refs[i].current?.classList.add(styles.active);
     }, 500);
     return () => {
-      interval && clearInterval(interval);
+      if (!!interval) {
+        clearInterval(interval);
+      }
     };
   }, []);
 
