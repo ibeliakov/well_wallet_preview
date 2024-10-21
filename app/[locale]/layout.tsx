@@ -23,6 +23,9 @@ const RootLayout: FC<Props> = ({ children, params: { locale = "en" } }) => {
   const messages = useMessages();
   return (
     <html>
+      <head>
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+      </head>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={classNames(`${inter.className}`)}>
           <div className="main">

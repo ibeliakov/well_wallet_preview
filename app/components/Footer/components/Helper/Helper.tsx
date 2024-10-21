@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import mail from "./images/mail.svg";
 import telegram from "./images/telegram.svg";
+import telegramWhite from "./images/telegram-white.svg";
 import styles from "./Helper.module.css";
 import { LINK_TO_SUPPORT } from "@/app/constants";
 
@@ -19,7 +20,20 @@ const Helper: FC = () => {
           rel="noreferrer"
           className={classNames(styles.link, styles.support)}
         >
-          <Image alt="mail" src={telegram} height={14} width={16} />
+          <Image
+            alt="mail"
+            className={styles.icon}
+            src={telegram}
+            height={14}
+            width={16}
+          />
+          <Image
+            alt="mail"
+            className={styles.hoverIcon}
+            src={telegramWhite}
+            height={14}
+            width={16}
+          />
           <span className={styles.link_text}>{t("support")}</span>
         </a>
         <a
