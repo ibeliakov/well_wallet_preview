@@ -11,7 +11,8 @@
       "email_required": "Please enter your email",
       "email_invalid": "Please enter a valid email",
       "message_required": "Please enter your message",
-      "message_placeholder": "Message:"
+      "message_placeholder": "Message:",
+      "notification": "Thank you for your message. We will contact you shortly."
     }
   }
 }

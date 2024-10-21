@@ -1,17 +1,31 @@
 .box {
-  width: 180px;
-  height: 180px;
+  width: 11.25rem !important;
+  height: 11.25rem !important;
   position: relative;
   margin: 0 auto;
 }
 .partner {
   display: block;
-  width: 180px;
-  height: 180px;
-  border-radius: 90px;
+  width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 50%;
   background: var(--background);
+  background-position: center center;
+  background-size: contain;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+  .box {
+    width: 7.5rem !important;
+    height: 7.5rem !important;
+  }
+  .partner {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  
 }
 
 .link {
@@ -31,6 +45,7 @@
 }
 
 .wrap {
+  margin: 0 auto;
   width: 100%;
   & :global(.react-multiple-carousel__arrow) {
     border: 2px solid var(--white);
@@ -41,11 +56,34 @@
   & :global(.react-multiple-carousel__arrow--right) {
     right: 0;
   }
+  & :global(.react-multi-carousel-dot button) {
+    box-sizing: border-box;
+    background: transparent;
+    border-color: var(--white);
+  }
+  & :global(.react-multi-carousel-dot.react-multi-carousel-dot--active button) {
+    background: var(--btn-gradient);
+    border: 0;
+    height: 16px;
+    width: 16px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
   .wrap {
-    display: none;
+    padding-bottom: 2.5rem;
+  }  
+}
+
+@media screen and (max-width: 576px) {
+  .wrap {
+    width: calc(400px - 2rem);
   }
 }
 
+@media screen and (max-width: 400px) {
+  .wrap {
+    width: calc(300px - 2rem);
+  }
+}

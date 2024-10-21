@@ -1,42 +1,27 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import styles from "./Partners.module.css";
+import { useWindowOnEvent } from "@/app/hooks";
 
 const Partners: FC = () => {
+  const [isMobile, setIsMobile] = useState(true);
   const responsive = {
-    superLargeDesktop: {
+    desktop: {
       breakpoint: { max: 4000, min: 992 },
       items: 4,
     },
-    desktop: {
-      breakpoint: { max: 992, min: 768 },
+    tablet: {
+      breakpoint: { max: 992, min: 400 },
       items: 3,
     },
-    tablet: {
-      breakpoint: { max: 768, min: 576 },
+    mobile: {
+      breakpoint: { max: 400, min: 0 },
       items: 2,
     },
-    mobile: {
-      breakpoint: { max: 567, min: 0 },
-      items: 2,
-    },
-
-    /* desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    } */
   };
   const partners = [
     {
@@ -81,8 +66,24 @@ const Partners: FC = () => {
     },
   ];
 
+  useWindowOnEvent(
+    "resize",
+    () => {
+      setIsMobile(typeof window !== "undefined" && window?.innerWidth <= 768);
+    },
+    [setIsMobile],
+    true
+  );
+
   return (
-    <Carousel infinite responsive={responsive} className={styles.wrap}>
+    <Carousel
+      infinite
+      responsive={responsive}
+      arrows={!isMobile}
+      showDots={isMobile}
+      /* autoPlay */
+      className={styles.wrap}
+    >
       {partners.map((partner, index) => (
         <div className={styles.box} key={index}>
           <div

@@ -7,6 +7,7 @@ import logoIcon from "./images/logo.svg";
 import styles from "./ToBot.module.css";
 import { useWindowOnEvent } from "@/app/hooks";
 import classNames from "classnames";
+import { LINK_TO_BOT } from "@/app/constants";
 
 type Props = Readonly<{
   resizeText?: boolean;
@@ -31,7 +32,7 @@ const ToBot: FC<Props> = ({ resizeText, isFull }) => {
 
   return (
     <a
-      href="https://t.me/your_bot"
+      href={LINK_TO_BOT}
       target="_blank"
       rel="noreferrer"
       className={classNames(styles.btn, {

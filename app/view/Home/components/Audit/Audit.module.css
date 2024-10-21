@@ -65,6 +65,10 @@
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.5px;
   gap: 65px;
   text-decoration: none;
   background: var(--btn-gradient);
@@ -296,11 +300,4 @@
   text-align: center;
   padding-top: 3.75rem;
   margin-bottom: 5rem;
-}
-
-
-@media screen and (max-width: 768px) {
-  .partners_title {
-    display: none;
-  }
 }

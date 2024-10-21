@@ -6,6 +6,7 @@ import Image from "next/image";
 import mail from "./images/mail.svg";
 import telegram from "./images/telegram.svg";
 import styles from "./Helper.module.css";
+import { LINK_TO_SUPPORT } from "@/app/constants";
 
 const Helper: FC = () => {
   const t = useTranslations("common");
@@ -13,7 +14,7 @@ const Helper: FC = () => {
     <div className={styles.box}>
       <div className={styles.links}>
         <a
-          href="https://t.me/your_bot"
+          href={LINK_TO_SUPPORT}
           target="_blank"
           rel="noreferrer"
           className={classNames(styles.link, styles.support)}

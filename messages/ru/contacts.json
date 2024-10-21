@@ -11,7 +11,8 @@
       "email_required": "Пожалуйста, введите ваш e-mail",
       "email_invalid": "Пожалуйста, введите корректный e-mail",
       "message_required": "Пожалуйста, введите сообщение",
-      "message_placeholder": "Сообщение:"
+      "message_placeholder": "Сообщение:",
+      "notification": "Спасибо за ваше сообщение. Мы свяжемся с вами в ближайшее время."
     }
   }
 }

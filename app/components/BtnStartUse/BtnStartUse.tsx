@@ -1,12 +1,13 @@
+import { FC } from "react";
 import { useTranslations } from "next-intl";
 
 import styles from "./BtnStartUse.module.css";
-import { FC } from "react";
+import { LINK_TO_BOT } from "@/app/constants";
 
 const BtnStartUse: FC = () => {
   const t = useTranslations("common");
   return (
-    <a href="/start-use" className={styles.btn}>
+    <a href={LINK_TO_BOT} className={styles.btn}>
       {t("start_use")}
     </a>
   );

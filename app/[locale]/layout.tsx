@@ -5,7 +5,7 @@ import classNames from "classnames";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import "reset-css";
 import "./globals.css";
-import { Breadcrumbs, Footer, Header } from "../components";
+import { Footer, Header } from "../components";
 
 const inter = Inter_Tight({ subsets: ["cyrillic"] });
 
@@ -27,10 +27,7 @@ const RootLayout: FC<Props> = ({ children, params: { locale = "en" } }) => {
         <body className={classNames(`${inter.className}`)}>
           <div className="main">
             <Header />
-            <main className="content">
-              <Breadcrumbs />
-              {children}
-            </main>
+            <main className="content">{children}</main>
             <Footer />
           </div>
         </body>

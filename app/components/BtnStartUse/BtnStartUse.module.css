@@ -1,4 +1,10 @@
 .btn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+
   display: inline-block;
   text-decoration: none;
   background: var(--btn-gradient);

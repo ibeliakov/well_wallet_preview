@@ -6,6 +6,7 @@ import { Container, Logo } from "@/app/components";
 import ToBot from "../ToBot";
 import styles from "./MobileNav.module.css";
 import { Link } from "@/i18n/routing";
+import classNames from "classnames";
 
 const MobileNav: FC = () => {
   const { routs } = useNavigationList();
@@ -21,9 +22,12 @@ const MobileNav: FC = () => {
         <span className={styles.line}></span>
         <span className={styles.line}></span>
       </button>
-      {show && (
-        <div className={styles.menu_back} onClick={handleClick}>
-          <div className={styles.menu}>
+      {
+        <div
+          className={classNames(styles.menu_back, { [styles.show]: show })}
+          onClick={handleClick}
+        >
+          <div className={classNames(styles.menu, { [styles.show]: show })}>
             <Container className={styles.header}>
               <Logo />
               <button className={styles.btn_close}>
@@ -43,7 +47,7 @@ const MobileNav: FC = () => {
             </Container>
           </div>
         </div>
-      )}
+      }
     </>
   );
 };

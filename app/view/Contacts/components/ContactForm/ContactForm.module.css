@@ -81,7 +81,7 @@
 }
 
 .input {
-  font-family: '__Inter_Tight_1f6045', '__Inter_Tight_Fallback_1f6045';
+  font-family: inherit;
   padding: 1rem 2.25rem;
   font-size: 1rem;
   font-weight: 500;
@@ -97,12 +97,38 @@
     border: none;
   }
   &::placeholder {
-    color: #1e1e1e;font-family: '__Inter_Tight_1f6045', '__Inter_Tight_Fallback_1f6045';font-family: '__Inter_Tight_1f6045', '__Inter_Tight_Fallback_1f6045';
+    font-family: inherit;
+    color: #1e1e1e;
     opacity: 0.5;
   }
 }
 
 .textarea {
+  font-family: inherit;
   resize: none;
   height: 176px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.notification {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.875rem 1.5rem;
+  width: 300px;
+  max-width: calc(100% - 2rem);
+  z-index: 1000;
+  background: var(--btn-gradient);
+  color: var(--white);
+  border-radius: 2.125rem;
+  box-shadow: 0px 0.625rem 3.75rem 0px rgba(0, 117, 223, 0.4), 0px 2px 1.25rem 0px rgba(0, 215, 203, 0.1);
+  animation: slideIn 0.7s;
 }

@@ -25,11 +25,6 @@ const useNavigationList = () => {
         name: "FAQ",
         href: "/faq",
       },
-      {
-        name: t("contacts"),
-        href: "/contacts",
-        altName: t("contacts_alt"),
-      },
     ],
     [t]
   );

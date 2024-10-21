@@ -1,3 +1,19 @@
+@keyframes menu_back_hide {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes menu_back {
+  from {
+    display: block;
+  }
+  to {
+    display: block;
+  }
+}
 .menu_back {
   padding-right: 1rem;
   position: fixed;
@@ -6,13 +22,52 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: none;
+  animation-name: menu_back_hide;
+  animation-duration: 0.3s;
+}
+
+.menu_back.show {
+  display: block;
+  opacity: 1;
+  z-index: 1000;
+  animation-name: menu_back;
+  animation-duration: 0.7s;
+}
+
+@keyframes menu-hide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-365px);
+  }
+}
+
+@keyframes menu {
+  from {
+    transform: translateX(-365px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .menu {
+  opacity: 0;
   max-width: 365px;
   width: 100%;
   background: var(--background);
   height: 100%;
+  animation-name: menu-hide;
+  animation-duration: 0.3s;
+}
+
+.menu.show {
+  opacity: 1;
+  animation-name: menu;
+  animation-duration: 0.7s;
 }
 
 .header {

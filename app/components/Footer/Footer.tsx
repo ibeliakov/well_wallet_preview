@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Helper, MainInfo, Navigation } from "./components";
+import { ColonTitle, Helper, MainInfo, Navigation } from "./components";
 import { Container } from "..";
 
 import styles from "./Footer.module.css";
@@ -11,6 +11,9 @@ const Footer: FC = () => {
         <MainInfo />
         <Navigation />
         <Helper />
+        <div className={styles.info}>
+          <ColonTitle />
+        </div>
       </Container>
     </footer>
   );

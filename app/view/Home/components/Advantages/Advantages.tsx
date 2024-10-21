@@ -3,6 +3,7 @@ import { BtnStartUse, Container, SectionInfo } from "@/app/components";
 import styles from "./Advantages.module.css";
 import { useTranslations } from "next-intl";
 import classNames from "classnames";
+import { Link } from "@/i18n/routing";
 
 const Advantages = () => {
   const t = useTranslations("home");
@@ -90,7 +91,7 @@ const Advantages = () => {
               <div className={styles.currency_name}>{name}</div>
             </div>
           ))}
-          <a className={styles.currency} href="/all" target="_blank">
+          <Link className={styles.currency} href="/tariffs" target="_blank">
             <div className={classNames(styles.currency_icon, styles.small)}>
               <Image
                 height={30}
@@ -100,7 +101,7 @@ const Advantages = () => {
               />
             </div>
             <div className={styles.currency_name}>{t("all")}</div>
-          </a>
+          </Link>
         </div>
         <BtnStartUse />
       </div>

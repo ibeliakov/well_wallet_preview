@@ -42,8 +42,13 @@
 .support {
   background: var(--white);
   color: var(--black);
+  &:hover {
+    background: var(--btn-gradient);
+    padding: calc(0.5rem + 1px) calc(0.875rem + 1px);
+    border: 0px;
+    color: var(--white);
+  }
 }
-
 
 
 .mail {

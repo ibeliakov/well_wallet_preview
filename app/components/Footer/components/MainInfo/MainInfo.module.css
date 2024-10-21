@@ -5,14 +5,10 @@
   gap: 0.625rem;
 }
 
-.info {
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.125rem;
-  letter-spacing: 0.01em;
-  text-align: left;
-  color: var(--white);
+
+@media screen and (max-width: 768px) {
+  .info {
+    display: none;
+  }
 }
-.title {
-  font-weight: 700;
-}
+

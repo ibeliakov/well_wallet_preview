@@ -21,11 +21,16 @@ const Question: FC<Props> = ({ title, description, active = false }) => {
         <h4 className={styles.title}>{title}</h4>
         <div
           className={classNames(styles.btn, styles.minus, {
-            [styles.plus]: show,
+            [styles.plus]: !show,
           })}
         />
       </div>
-      <div className={classNames(styles.content, { [styles.show]: show })}>
+      <div
+        className={classNames(styles.content, {
+          [styles.show]: show,
+          [styles.hide]: !show,
+        })}
+      >
         {description}
       </div>
     </div>
