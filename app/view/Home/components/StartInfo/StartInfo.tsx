@@ -14,7 +14,6 @@ const StartInfo: FC = () => {
   const ref4 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log("StartInfo");
     const refs = [ref1, ref2, ref3, ref4];
     let i = 0;
     ref1.current?.classList.add(styles.active);
