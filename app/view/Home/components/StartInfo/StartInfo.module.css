@@ -29,7 +29,14 @@
   gap: 5rem;
 }
 
-
+@keyframes line {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .option {
   position: relative;
@@ -47,6 +54,7 @@
     top: 83px;
     left: calc(50% - 1350px);
     z-index: 0;
+    animation: line 3s ease-out;
   }
   &::after {
     content: '';
