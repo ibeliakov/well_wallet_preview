@@ -77,13 +77,34 @@ body {
   display: table;
 }
 
-@keyframes bulb {
-  from {
+@keyframes bulb-left {
+  0% {
     opacity: 0;
+    zoom: 0.5;
   }
-  to {
+  50% {
     opacity: 1;
+    zoom: 1;
   }
+  100% {
+    opacity: 1;
+    zoom: 1;
+  }
+}
+
+@keyframes bulb-right {
+  0% {
+    opacity: 0;
+    zoom: 0.5;
+  }
+  30% {
+    opacity: 0;
+    zoom: 0.5;
+  }
+  100% {
+    opacity: 1;
+    zoom: 1;
+  }  
 }
 
 .home {
@@ -95,7 +116,6 @@ body {
     background-repeat: no-repeat;
     z-index: 0;
     top: 0;
-    opacity: 1;
   }
 
   &::before {
@@ -103,8 +123,7 @@ body {
     height: 545px;
     width: 745px;
     left: calc(50% - 700px - 362px);
-    animation: bulb  1s ease-in-out;
-    animation-delay: 0.5s;
+    animation: bulb-left  2s linear;
   }
 
   &::after {
@@ -112,8 +131,7 @@ body {
     height: 930px;
     width: 1000px;
     right: calc(50% - 700px - 631px);
-    animation: bulb  1s ease-in-out;
-    animation-delay: 0.5s;
+    animation: bulb-right 2s linear;
   }
 }
 
