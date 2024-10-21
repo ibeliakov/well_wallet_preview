@@ -92,15 +92,50 @@ body {
     background-position: -280px 0;
     height: 545px;
     width: 745px;
-    left: calc(50% - 1062px);
+    left: calc(50% - 700px - 362px);
   }
 
   &::after {
     background-position: -1674px 0;
     height: 930px;
     width: 1000px;
-    right: calc(50% - 1331px);
+    right: calc(50% - 700px - 631px);
   }
-  
 }
 
+@media screen and (max-width: 1400px) {
+  .home::before {
+    left: calc(50% - 600px - 362px);
+  }
+  .home::after {
+    right: calc(50% - 600px - 631px);
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .home::before {
+    left: calc(50% - 500px - 362px);
+  }
+  .home::after {
+    right: calc(50% - 500px - 631px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home::before {
+    left: calc(50% - 350px - 362px);
+  }
+  .home::after {
+    right: calc(50% - 350px - 631px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home::before {
+    left: calc(50% - 300px - 362px);
+  }
+  .home::after {
+    right: calc(50% - 300px - 631px);
+  }
+}
