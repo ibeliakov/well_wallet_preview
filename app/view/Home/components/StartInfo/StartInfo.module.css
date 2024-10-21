@@ -103,6 +103,7 @@
 
 .option_item {
   display: inline-flex;
+  opacity: 0;
   background: var(--btn-gradient);
   padding: 1px;
   border-radius: 2.125rem;
@@ -165,24 +166,20 @@
   }
 }
 
-.item1 {
-  display: none;
+.item1.active {
+  opacity: 1;
   animation: item1 1s ease-out;
 }
-.item2 {
-  display: none;
+.item2.active {
+  opacity: 1;
   animation: item2 1s ease-out;
-  display: none;
+  
 }
-.item3 {
-  display: none;
+.item3.active {
+  opacity: 1;
   animation: item1 1s ease-out;
 }
-.item4 {
-  display: none;
+.item4.active {
+  opacity: 1;
   animation: item2 1s ease-out;
-}
-
-.active {
-  display: flex;
 }

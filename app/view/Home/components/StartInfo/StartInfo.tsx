@@ -17,6 +17,7 @@ const StartInfo: FC = () => {
     const refs = [ref1, ref2, ref3, ref4];
     let i = 0;
     ref1.current?.classList.add(styles.active);
+    
     const interval = setInterval(() => {
       i++;
       if (i === 4) {
@@ -24,11 +25,14 @@ const StartInfo: FC = () => {
         return;
       }
       refs[i].current?.classList.add(styles.active);
-    }, 500);
+    }, 200);
     return () => {
       if (!!interval) {
         clearInterval(interval);
       }
+      [ref1, ref2, ref3, ref4].forEach((ref) => {
+        ref.current?.classList.remove(styles.active);
+      });
     };
   }, []);
 
