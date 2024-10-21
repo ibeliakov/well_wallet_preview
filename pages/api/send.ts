@@ -1,3 +1,4 @@
+import { LAGAL_EMAIL, SUPPORT_EMAIL } from "@/app/constants";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Resend } from "resend";
 
@@ -20,8 +21,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
 
     const { error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: ["support@wellwallet.io"],
+      from: SUPPORT_EMAIL,
+      to: [LAGAL_EMAIL],
       subject: "URGENT REQUEST",
       text: `
         From: ${body.email}
