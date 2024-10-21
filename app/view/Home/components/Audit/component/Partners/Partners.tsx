@@ -81,7 +81,7 @@ const Partners: FC = () => {
       responsive={responsive}
       arrows={!isMobile}
       showDots={isMobile}
-      /* autoPlay */
+      autoPlay
       className={styles.wrap}
     >
       {partners.map((partner, index) => (

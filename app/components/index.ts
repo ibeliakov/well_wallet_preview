@@ -5,6 +5,7 @@ import Header from "./Header";
 import Logo from "./Logo";
 import PhoneWithMenu from "./PhoneWithMenu";
 import SectionInfo from "./SectoinInfo";
+import TextContent from "./TextContent";
 
 export {
   Container,
@@ -14,4 +15,5 @@ export {
   BtnStartUse,
   PhoneWithMenu,
   SectionInfo,
+  TextContent,
 };
