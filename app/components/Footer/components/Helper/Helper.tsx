@@ -7,7 +7,7 @@ import mail from "./images/mail.svg";
 import telegram from "./images/telegram.svg";
 import telegramWhite from "./images/telegram-white.svg";
 import styles from "./Helper.module.css";
-import { LINK_TO_SUPPORT } from "@/app/constants";
+import { LINK_TO_SUPPORT, SUPPORT_EMAIL } from "@/app/constants";
 
 const Helper: FC = () => {
   const t = useTranslations("common");
@@ -37,11 +37,11 @@ const Helper: FC = () => {
           <span className={styles.link_text}>{t("support")}</span>
         </a>
         <a
-          href="mailto:test.info@wellwallet.com"
+          href={`mailto:${SUPPORT_EMAIL}`}
           className={classNames(styles.link, styles.mail)}
         >
           <Image alt="mail" src={mail} height={10} width={14} />
-          <span className={styles.link_text}>test.info@wellwallet.com</span>
+          <span className={styles.link_text}>{SUPPORT_EMAIL}</span>
         </a>
       </div>
       <div className={styles.info}>

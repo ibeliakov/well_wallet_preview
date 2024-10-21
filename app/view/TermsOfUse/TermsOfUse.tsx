@@ -1,4 +1,5 @@
 import { TextContent } from "@/app/components";
+import { SUPPORT_EMAIL } from "@/app/constants";
 import { FC } from "react";
 
 const TermsOfUse: FC = () => {
@@ -251,7 +252,7 @@ const TermsOfUse: FC = () => {
         <p>
           If you have any questions about this Agreement or the WellWallet Bot,
           please contact us at{" "}
-          <a href="mailto:support@wellwallet.io">support@wellwallet.io</a>.
+          <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>.
         </p>
       </div>
     </TextContent>
