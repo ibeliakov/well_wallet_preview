@@ -142,3 +142,47 @@
   line-height: 1.65rem;
   text-align: center;
 }
+
+@keyframes item1 {
+  0% {
+    transform: translateX(-270px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes item2 {
+  0% {
+    transform: translateX(270px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.item1 {
+  display: none;
+  animation: item1 1s ease-out;
+}
+.item2 {
+  display: none;
+  animation: item2 1s ease-out;
+  display: none;
+}
+.item3 {
+  display: none;
+  animation: item1 1s ease-out;
+}
+.item4 {
+  display: none;
+  animation: item2 1s ease-out;
+}
+
+.active {
+  display: flex;
+}

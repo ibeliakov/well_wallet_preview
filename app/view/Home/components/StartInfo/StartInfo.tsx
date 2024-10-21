@@ -1,12 +1,36 @@
+"use client";
 import { BtnStartUse, Container } from "@/app/components";
 import { useTranslations } from "next-intl";
 import styles from "./StartInfo.module.css";
 import Image from "next/image";
 import classNames from "classnames";
-import { FC } from "react";
+import { FC, useEffect, useRef } from "react";
 
 const StartInfo: FC = () => {
   const t = useTranslations("home");
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const ref4 = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    console.log("StartInfo");
+    const refs = [ref1, ref2, ref3, ref4];
+    let i = 0;
+    ref1.current?.classList.add(styles.active);
+    const interval = setInterval(() => {
+      i++;
+      if (i === 4) {
+        clearInterval(interval);
+        return;
+      }
+      refs[i].current?.classList.add(styles.active);
+    }, 500);
+    return () => {
+      interval && clearInterval(interval);
+    };
+  }, []);
+
   return (
     <section>
       <Container className={styles.content}>
@@ -16,7 +40,10 @@ const StartInfo: FC = () => {
         </div>
         <div className={styles.option}>
           <div className={classNames(styles.option_line, "clearfix")}>
-            <div className={styles.option_item}>
+            <div
+              ref={ref1}
+              className={classNames(styles.option_item, styles.item1)}
+            >
               <div className={styles.option_item_content}>
                 <Image
                   src="/images/wallet_save.svg"
@@ -29,7 +56,10 @@ const StartInfo: FC = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.option_item}>
+            <div
+              ref={ref2}
+              className={classNames(styles.option_item, styles.item2)}
+            >
               <div className={styles.option_item_content}>
                 <Image
                   src="/images/sending.svg"
@@ -48,7 +78,10 @@ const StartInfo: FC = () => {
               "clearfix"
             )}
           >
-            <div className={styles.option_item}>
+            <div
+              ref={ref3}
+              className={classNames(styles.option_item, styles.item3)}
+            >
               <div className={styles.option_item_content}>
                 <Image
                   src="/images/exchange.svg"
@@ -59,7 +92,10 @@ const StartInfo: FC = () => {
                 <div className={styles.option_item_text}>{t("exchange")}</div>
               </div>
             </div>
-            <div className={styles.option_item}>
+            <div
+              ref={ref4}
+              className={classNames(styles.option_item, styles.item4)}
+            >
               <div className={styles.option_item_content}>
                 <Image
                   src="/images/safety.svg"
