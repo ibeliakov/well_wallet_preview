@@ -60,6 +60,7 @@
 
 @media screen and (max-width: 1400px) {
   .option {
+    padding-top: 3rem;
     &::before {
       top: 63px;
     }
@@ -76,6 +77,12 @@
     }
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  .option {
+    padding-top: 1rem;
+  }
 }
 
 .option_line {

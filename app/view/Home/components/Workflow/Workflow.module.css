@@ -22,6 +22,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .wrap {
+    padding-top: 3.75rem;
+    padding-bottom: 6.25rem;
+  }
+}
+
 .info {
   margin-bottom: 4.375rem;
 }

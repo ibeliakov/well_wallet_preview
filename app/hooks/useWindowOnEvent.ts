@@ -12,7 +12,7 @@ const useWindowOnEvent = (
 
   useEffect(() => {
     if (isCallImmediately) {
-      callback();
+      fnRef.current();
     }
   }, [isCallImmediately, ...(deps || [])]);
 

@@ -7,9 +7,10 @@
   color: #21272A;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   .wrap {
     padding: 6.25rem 0;
+    gap: 3.75rem;
   }
 }
 
