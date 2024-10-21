@@ -33,6 +33,7 @@ const ContactForm: FC = () => {
   const [emailError, setEmailError] = useState<string | null>(null);
   const [messageError, setMessageError] = useState<string | null>(null);
   const [showNotification, setShowNotification] = useState(false);
+  const [showNotificationError, setShowNotificationError] = useState(false);
   const [loading, setLoading] = useState(false);
   const { resetFields } = form;
   const changeFields = useCallback(
@@ -55,6 +56,7 @@ const ContactForm: FC = () => {
   const handleFinish = useCallback(
     async (values: FormValues) => {
       try {
+        setShowNotificationError(false);
         setLoading(true);
         const res = await fetch("/api/send", {
           method: "POST",
@@ -65,6 +67,8 @@ const ContactForm: FC = () => {
         }
         setShowNotification(true);
         resetFields();
+      } catch (error) {
+        setShowNotificationError(true);
       } finally {
         setLoading(false);
       }
@@ -83,6 +87,18 @@ const ContactForm: FC = () => {
       clearTimeout(timer);
     };
   }, [showNotification, setShowNotification]);
+
+  useEffect(() => {
+    if (!showNotificationError) {
+      return;
+    }
+    const timer = setTimeout(() => {
+      setShowNotificationError(false);
+    }, 3000);
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [showNotificationError, setShowNotificationError]);
 
   return (
     <>
@@ -136,6 +152,9 @@ const ContactForm: FC = () => {
         </button>
       </Form>
       {showNotification && (
+        <div className={styles.notification}>{t("form.notification")}</div>
+      )}
+      {showNotificationError && (
         <div className={styles.notification}>{t("form.notification")}</div>
       )}
     </>
