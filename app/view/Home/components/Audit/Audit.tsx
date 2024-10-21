@@ -1,4 +1,3 @@
-import { Container, PhoneWithMenu, SectionInfo } from "@/app/components";
 import { useTranslations } from "next-intl";
 
 import styles from "./Audit.module.css";
@@ -6,7 +5,8 @@ import Image from "next/image";
 import classNames from "classnames";
 import { Link } from "@/i18n/routing";
 import { FC } from "react";
-import { Partners } from "./component";
+import { Partners, ArticlePreview } from "./component";
+import { Container, SectionInfo } from "@/app/components";
 
 const Audit: FC = () => {
   const t = useTranslations("home");
@@ -94,8 +94,11 @@ const Audit: FC = () => {
                   />
                 </div>
               </div>
-              <div className={styles.article_preview}>
-                <PhoneWithMenu activeBtn={6} className={styles.phone} />
+              <ArticlePreview />
+              {/*  <div className={styles.article_preview}>
+                <div>
+                  <PhoneWithMenu activeBtn={6} className={styles.phone} />
+                </div>
                 <div className={styles.article_preview_chat}>
                   <div className={styles.message}>{t("chat_message")}</div>
                   <div className={styles.currencies}>
@@ -106,7 +109,7 @@ const Audit: FC = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Container>
         </div>

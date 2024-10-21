@@ -66,7 +66,7 @@ const Workflow: FC = () => {
     });
     let i = 0;
     //@ts-ignore
-    chat?.parentElement.classList.add("active")
+    chat?.parentElement.classList.add("active");
     const interval = setInterval(() => {
       //@ts-ignore
       items[i].classList.add("active");

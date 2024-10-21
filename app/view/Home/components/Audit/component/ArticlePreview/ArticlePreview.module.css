@@ -1,0 +1,121 @@
+.article_preview {
+  position: relative;
+  padding-right: 3.94rem;
+  padding-top: 3.125rem;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 482px;
+    height: 447px;
+    top: 150px;
+    right: 0;
+    background: url('/images/planets_space.svg') no-repeat 50% 50%;
+    z-index: 0;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 45px;
+    top: 268px;
+    right: 433px;
+    background: url('/images/logo.svg') no-repeat center center white;
+    background-size: 70%;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  & .phone {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .article_preview {
+    zoom: 0.9;
+    margin-right: -50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article_preview {
+    zoom: 0.5;
+  }
+}
+
+.article_preview_chat {
+  position: absolute;
+  width: 360px;
+  right: 119px;
+  top: 320px;
+  z-index: 1;
+}
+
+@keyframes currencies {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+}
+
+.currencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  opacity: 0;
+  &:global(.active) {
+    opacity: 1;
+    animation: currencies 0.8s ease-out forwards;
+  }
+}
+
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.28rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--black-text);
+  background: var(--grey-blue);
+  padding: 0.75rem 1rem;
+  border-radius: 3.125rem;
+}
+
+@keyframes message {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.message {
+  background: #555555;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 0.5rem 1.25rem 1.25rem 1.25rem;
+  color: var(--white);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.29rem;
+  letter-spacing: 0.01em;
+  text-align: left;  
+  margin-bottom: 0.9375rem;
+  opacity: 0;
+  &:global(.active) {
+    opacity: 1;
+    animation: message 0.5s ease-out forwards;
+  }
+}
