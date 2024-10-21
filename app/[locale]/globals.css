@@ -77,6 +77,15 @@ body {
   display: table;
 }
 
+@keyframes bulb {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .home {
   &::after, &::before {
     content: '';
@@ -86,6 +95,7 @@ body {
     background-repeat: no-repeat;
     z-index: 0;
     top: 0;
+    opacity: 1;
   }
 
   &::before {
@@ -93,6 +103,8 @@ body {
     height: 545px;
     width: 745px;
     left: calc(50% - 700px - 362px);
+    animation: bulb  1s ease-in-out;
+    animation-delay: 0.5s;
   }
 
   &::after {
@@ -100,6 +112,8 @@ body {
     height: 930px;
     width: 1000px;
     right: calc(50% - 700px - 631px);
+    animation: bulb  1s ease-in-out;
+    animation-delay: 0.5s;
   }
 }
 

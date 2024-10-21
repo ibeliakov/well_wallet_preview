@@ -9,6 +9,7 @@ import { useNavigationList } from "@/app/hooks";
 const Navigation: FC = () => {
   const { isHome, routs, currentRout } = useNavigationList();
   useEffect(() => {
+    console.log("isHome", isHome);
     if (isHome) {
       document?.body?.classList.add("home");
       return () => {
