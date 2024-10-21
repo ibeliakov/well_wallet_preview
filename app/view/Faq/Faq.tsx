@@ -5,8 +5,7 @@ import { FC } from "react";
 import styles from "./Faq.module.css";
 import { Question } from "./components";
 import Image from "next/image";
-import { LINK_TO_BOT, LINK_TO_SUPPORT } from "@/app/constants";
-import { Link } from "@/i18n/routing";
+import { LINK_TO_SUPPORT } from "@/app/constants";
 
 const Faq: FC = () => {
   const t = useTranslations("faq");
