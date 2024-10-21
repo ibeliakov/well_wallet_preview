@@ -5,6 +5,7 @@ import styles from "./Contacts.module.css";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { ContactForm } from "./components";
+import { LAGAL_EMAIL } from "@/app/constants";
 
 const Contacts: FC = () => {
   const t = useTranslations("contacts");
@@ -30,10 +31,10 @@ const Contacts: FC = () => {
                 <div className={styles.contact_label}>e-mail:</div>
                 <a
                   className={styles.contact_email}
-                  href="mailto:test.info@wellwallet.com"
+                  href={`mailto:${LAGAL_EMAIL}`}
                   target="_blank"
                 >
-                  test.info@wellwallet.com
+                  {LAGAL_EMAIL}
                 </a>
               </div>
             </div>
