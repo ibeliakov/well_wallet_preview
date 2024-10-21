@@ -39,6 +39,12 @@
   letter-spacing: 0.01em;
 }
 
+.link_text {
+  flex-shrink: 0;
+  text-align: center;
+  width: 11rem;
+}
+
 .support {
   background: var(--white);
   color: var(--black);

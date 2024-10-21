@@ -20,14 +20,14 @@ const Helper: FC = () => {
           className={classNames(styles.link, styles.support)}
         >
           <Image alt="mail" src={telegram} height={14} width={16} />
-          {t("support")}
+          <span className={styles.link_text}>{t("support")}</span>
         </a>
         <a
           href="mailto:test.info@wellwallet.com"
           className={classNames(styles.link, styles.mail)}
         >
           <Image alt="mail" src={mail} height={10} width={14} />
-          test.info@wellwallet.com
+          <span className={styles.link_text}>test.info@wellwallet.com</span>
         </a>
       </div>
       <div className={styles.info}>

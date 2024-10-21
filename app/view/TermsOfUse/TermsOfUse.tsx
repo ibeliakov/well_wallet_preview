@@ -23,17 +23,17 @@ const TermsOfUse: FC = () => {
           outlined below.
         </p>
         <p>
-          <div>
+          <span>
             <b>Company name:</b> WELL CORE TECHNOLOGIES SR
-          </div>
-          <div>
+          </span>
+          <span>
             <b>Registered code:</b> 3-102-913956
-          </div>
-          <div>
+          </span>
+          <span>
             <b>Address:</b> COSTA RICA, SAN JOSÉ, MONTES DE OCA, SAN PEDRO, Los
             Yoses, eighth and tenth avenue, thirty-nine street, second right
             office, LY Center.
-          </div>
+          </span>
         </p>
       </div>
       <div>

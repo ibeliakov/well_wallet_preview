@@ -37,8 +37,8 @@
     letter-spacing: 0.01em;
     margin-bottom: 1rem;
 
-    & div {
-      margin-bottom: 0;
+    & span {
+      display: block;
     }
 
     & + ul {
