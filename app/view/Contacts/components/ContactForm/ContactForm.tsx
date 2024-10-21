@@ -56,7 +56,13 @@ const ContactForm: FC = () => {
     async (values: FormValues) => {
       try {
         setLoading(true);
-        console.log(values);
+        const res = await fetch("/api/send", {
+          method: "POST",
+          body: JSON.stringify(values),
+        });
+        if (!res.ok) {
+          throw new Error("Failed to send message");
+        }
         setShowNotification(true);
         resetFields();
       } finally {

@@ -1,53 +1,53 @@
 {
   "faq": {
     "title": "FAQ",
-    "description": "В этом разделе вы найдете ответы на самые популярные вопросы о работе нашего криптокошелька. Узнайте больше о комиссиях, функциях безопасности, AML проверках и других возможностях. Мы собрали важную информацию, чтобы вы могли легко разобраться с функционалом и преимуществами нашего продукта.",
+    "description": "In this section, you will find answers to the most frequently asked questions about how our crypto wallet works. Learn more about fees, security features, AML checks, and other capabilities. We’ve gathered important information to help you easily understand the functionality and benefits of our product.",
     "questions_title": "Вопросы:",
     "question_1": {
-      "title": "Как зарегистрировать кошелек?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to register a wallet?",
+      "description": "Go to the bot via the link https://t.me/well_walletbot and press the “Start” button. Then, in the menu, select “Wallet” and click “Create a new wallet.”"
     },
     "question_2": {
-      "title": "Как внести депозит?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to make a deposit?",
+      "description": "Go to the “Deposit” menu, then choose the wallet you want to fund. The bot will display your wallet address. Carefully check the network and wallet address when sending funds. Funds sent to the wrong address or via the wrong blockchain network will be irreversibly lost."
     },
     "question_3": {
-      "title": "Как вывести средства?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to withdraw funds?",
+      "description": "Go to the “Withdraw” menu, then select the token you want to withdraw and specify the wallet type: personal or exchange. After that, choose the specific wallet for the withdrawal. Enter the wallet address to which you want to send the funds and press “Enter.”"
     },
     "question_4": {
-      "title": "Как выполнить AML проверку кошелька?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to perform an AML check on a wallet?",
+      "description": "Select the “AML Check” option, then choose the network associated with the wallet you want to check. Enter the wallet address and press “Enter.”"
     },
     "question_5": {
-      "title": "Что такое биржевой кошелек?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "What is an exchange wallet?",
+      "description": "An exchange wallet is a service wallet where your funds are stored together with other users’ funds in a shared wallet. The activity of this wallet will be hidden in transaction scanners, similar to how it works on platforms like Binance, OKX, and others."
     },
     "question_6": {
-      "title": "Что такое личный кошелек?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "What is a personal wallet?",
+      "description": "A personal wallet is a wallet where only your funds are stored. The activity of this wallet will be publicly accessible and visible in transaction scanners."
     },
     "question_7": {
-      "title": "Как обменять криптовалюту?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to exchange cryptocurrency?",
+      "description": "Go to the “Exchange” section, select the token you want to sell, then choose the token you want to buy. Next, select the wallet from which the funds will be deducted and the wallet where the funds will be credited."
     },
     "question_8": {
-      "title": "Какие тарифы на ввод/вывод средств?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "What are the fees for deposits and withdrawals?",
+      "description": "Detailed information about fees is available at wellwallet.io/tariffs"
     },
     "question_9": {
-      "title": "Какие тарифы на ввод/вывод средств?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "I received funds, but they haven’t arrived in my wallet",
+      "description": "The transaction processing speed heavily depends on the network from which you are sending the funds. For example, in the TRON network, it typically takes 2-5 minutes, while in the Ethereum network, it may take 10 to 20 minutes. If your funds do not appear in your wallet balance after a considerable time, please contact our support team, and we will assist you in resolving the issue."
     },
     "question_10": {
-      "title": "Какие тарифы на ввод/вывод средств?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to enable 2FA?",
+      "description": "Go to the “Settings” menu, then select “Security.” Next, open the “2FA” section and follow the bot’s prompts to activate two-factor authentication (2FA)."
     },
     "question_11": {
-      "title": "Как дополнительно обезопасить свои средства?",
-      "description": "Новый пользователь сможет легко зарегистрироваться в нашем кошельке на платформе Telegram и начать использовать криптовалюты, такие как: Ethereum (ETH, USDT), Bitcoin (BTC) и Tron (TRX, USDT) для отправки, получения и обмена активов. После того как реферал начнет совершать операции (ввод, вывод, обмен), вам будет начисляться 10% от каждой оплаченной им комиссии. Бонусы зачисляются в USDT TRON по актуальному курсу на момент совершения операции."
+      "title": "How to further secure your funds?",
+      "description": "First of all, enable two-factor authentication on your Telegram account and set a password for logging into Telegram. Regularly check the active sessions and devices in your Telegram account. If you notice any unknown sessions or devices, immediately change your passwords on your Telegram account to enhance the security of your funds."
     },
-    "leave_question": "Остались вопросы?",
-    "leave_question_description": "Обратитесь в нашу техническую поддержку."
+    "leave_question": "Do you have any questions?",
+    "leave_question_description": "Contact our technical support."
   }
 }

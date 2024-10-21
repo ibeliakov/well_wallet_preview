@@ -5,6 +5,8 @@ import { FC } from "react";
 import styles from "./Faq.module.css";
 import { Question } from "./components";
 import Image from "next/image";
+import { LINK_TO_BOT, LINK_TO_SUPPORT } from "@/app/constants";
+import { Link } from "@/i18n/routing";
 
 const Faq: FC = () => {
   const t = useTranslations("faq");
@@ -40,7 +42,7 @@ const Faq: FC = () => {
         <div>
           <a
             className={styles.btn}
-            href="https://t.me/wellwallet"
+            href={LINK_TO_SUPPORT}
             target="_blank"
             rel="noopener noreferrer"
           >
