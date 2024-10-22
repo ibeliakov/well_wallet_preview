@@ -66,7 +66,7 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
               </span>
             </div>,
             "0,5 USDT",
-            "1.5 USDT",
+            "2,5 USDT",
             "min 0,5 USDT",
             "min 10 USDT",
           ],
@@ -288,18 +288,10 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
                 <b>Bitcoin</b>
               </span>
             </div>,
-            <span className={styles.text} key={1}>
-              {t("soon")}
-            </span>,
-            <span className={styles.text} key={2}>
-              {t("soon")}
-            </span>,
-            <span className={styles.text} key={3}>
-              {t("soon")}
-            </span>,
-            <span className={styles.text} key={4}>
-              {t("soon")}
-            </span>,
+            "0,000015 BTC",
+            "0,00016 BTC",
+            "0,000015 BTC",
+            "0,000015 BTC",
           ],
         ],
       },
@@ -327,10 +319,18 @@ const TariffsTable: FC<Props> = ({ isBlack = false }) => {
                 <b>BNB</b> <span className={styles.no_break}>(BEP-20)</span>
               </span>
             </div>,
-            "0,02 BNB",
-            "0,1 BNB",
-            "0,02 BNB",
-            "0,1 BNB",
+            <span className={styles.text} key={1}>
+              {t("soon")}
+            </span>,
+            <span className={styles.text} key={2}>
+              {t("soon")}
+            </span>,
+            <span className={styles.text} key={3}>
+              {t("soon")}
+            </span>,
+            <span className={styles.text} key={4}>
+              {t("soon")}
+            </span>,
           ],
         ],
       },
