@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import styles from "./Tariffs.module.css";
 import { SectionInfo } from "@/app/components";
-import classNames from "classnames";
+//import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import { TariffsTable } from "./components";
 

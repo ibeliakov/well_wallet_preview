@@ -33,16 +33,15 @@ const Faq: FC = () => {
             description={t.rich(`question_${i + 1}.description`, {
               link: (chunks) => {
                 const values = Array.isArray(chunks) ? chunks : [chunks];
-                return values.map((value) => {
-                  if (typeof value === "string") {
+                return values
+                  .filter((value) => typeof value === "string")
+                  .map((value, i) => {
                     return (
-                      <Link target="_blank" href={convertToLink(value)}>
+                      <Link key={i} target="_blank" href={convertToLink(value)}>
                         {value}
                       </Link>
                     );
-                  }
-                  return chunks;
-                });
+                  });
               },
             })}
             active={i === 0}
