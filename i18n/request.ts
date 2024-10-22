@@ -19,6 +19,9 @@ export default getRequestConfig(async ({ locale }) => {
       b(chunks) {
         return `<b>${chunks}</b>`;
       },
+      /* link(chunks) {
+        return `<a href="${chunks}">${chunks}</a>`;
+      }, */
     },
   };
 });

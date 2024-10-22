@@ -5,7 +5,7 @@
     "questions_title": "Вопросы:",
     "question_1": {
       "title": "How to register a wallet?",
-      "description": "Go to the bot via the link https://t.me/well_walletbot and press the “Start” button. Then, in the menu, select “Wallet” and click “Create a new wallet.”"
+      "description": "Go to the bot via the link <link>https://t.me/well_walletbot</link> and press the “Start” button. Then, in the menu, select “Wallet” and click “Create a new wallet.”"
     },
     "question_2": {
       "title": "How to make a deposit?",
@@ -33,7 +33,7 @@
     },
     "question_8": {
       "title": "What are the fees for deposits and withdrawals?",
-      "description": "Detailed information about fees is available at wellwallet.io/tariffs"
+      "description": "Detailed information about fees is available at <link>wellwallet.io/tariffs<link>"
     },
     "question_9": {
       "title": "I received funds, but they haven’t arrived in my wallet",

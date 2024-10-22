@@ -7,70 +7,70 @@
     "aml":"AML",
     "workflow" : {
       "title": "How it works",
-      "description": "Well Wallet is a cryptocurrency wallet integrated into a user-friendly interface \nTelegram bot that allows you to easily and securely manage your crypto assets."
+      "description": "Well Wallet is a cryptocurrency wallet integrated into a user-friendly interface \nTelegram bot that allows you to easily and securely manage your crypto assets"
     },
     "safe_replenishment": {
       "title": "Secure deposit",
-      "description": "Easily and securely deposit funds into your wallet.\nAll transactions undergo automatic AML checks, ensuring transparency and protection of your funds at every stage."
+      "description": "Easily and securely deposit funds into your wallet.\nAll transactions undergo automatic AML checks, ensuring transparency and protection of your funds at every stage"
     },
     "quick_exchange": {
       "title": "Fast exchange",
-      "description": "Quick and secure cryptocurrency exchange without leaving Telegram. There’s no need to transfer funds to questionable exchange services; the exchange occurs within the wallet, quickly and reliably, at the best market rates."
+      "description": "Quick and secure cryptocurrency exchange without leaving Telegram. There’s no need to transfer funds to questionable exchange services; the exchange occurs within the wallet, quickly and reliably, at the best market rates"
     },
     "convenient_sending": {
       "title": "Convenient withdrawal",
-      "description": "Send cryptocurrency in just two clicks, without unnecessary steps and complications. The fee is automatically paid in the same currency you are sending, eliminating the need to top up with additional cryptocurrency to cover the fee."
+      "description": "Send cryptocurrency in just two clicks, without unnecessary steps and complications. The fee is automatically paid in the same currency you are sending, eliminating the need to top up with additional cryptocurrency to cover the fee"
     },
     "aml_check": {
       "title": "Free AML check",
-      "description": "All incoming transactions undergo automatic AML checks to ensure security and compliance with international standards. This protects you from illegal activities and ensures the transparency of your financial assets."
+      "description": "All incoming transactions undergo automatic AML checks to ensure security and compliance with international standards. This protects you from illegal activities and ensures the transparency of your financial assets"
     },
     "support": {
       "title": "Technical support",
-      "description": "Our technical support is always available — you can quickly reach out to us directly in Telegram. Prompt responses and assistance with any wallet-related inquiries will ensure a comfortable and secure experience."
+      "description": "Our technical support is always available — you can quickly reach out to us directly in Telegram. Prompt responses and assistance with any wallet-related inquiries will ensure a comfortable and secure experience"
     },
     "low_fees": {
       "title": "Low fees",
-      "description": "Use the wallet with minimal fees for all transactions. We offer competitive rates for transfers, withdrawals, and cryptocurrency exchanges, making your transactions as profitable as possible.​"
+      "description": "Use the wallet with minimal fees for all transactions. We offer competitive rates for transfers, withdrawals, and cryptocurrency exchanges, making your transactions as profitable as possible."
     },
     "welcome": "🚀 Welcome to Well Wallet!",
     "advantages": {
       "title": "Advantages",
-      "description": "A cryptocurrency wallet integrated into a user-friendly Telegram bot interface that allows users to easily and securely manage their crypto assets.​"
+      "description": "A cryptocurrency wallet integrated into a user-friendly Telegram bot interface that allows users to easily and securely manage their crypto assets"
     },
     "2fa": {
       "title": "2FA",
-      "description": "Two-factor authentication enhances the security level of access to your wallet. Set daily/monthly withdrawal limits on crypto assets for added protection."
+      "description": "Two-factor authentication enhances the security level of access to your wallet. Set daily/monthly withdrawal limits on crypto assets for added protection"
     },
     "always_at_hand": {
       "title": "Always at hand",
-      "description": "A cryptocurrency wallet integrated into a user-friendly Telegram bot interface that allows users to easily and securely manage their crypto assets."
+      "description": "A cryptocurrency wallet integrated into a user-friendly Telegram bot interface that allows users to easily and securely manage their crypto assets"
     },
     "exchange_click": {
       "title": "One-click exchange",
-      "description": "A cryptocurrency wallet integrated into a user-friendly Telegram bot interface that allows users to easily and securely manage their crypto assets."
+      "description": "Instantly exchange cryptocurrency right in your wallet with just one click. Minimal fees and maximum speed — your convenient way to manage assets"
     },
     "wallets": {
       "title": "Unlimited wallets",
-      "description": "Generate any number of wallets and manage them in one place. Receive comprehensive reports and statements for all your wallets."
+      "description": "Generate any number of wallets and manage them in one place. Receive comprehensive reports and statements for all your wallets"
     },
     "2_types_of_wallets": {
       "title": "2 types of wallets: personal and exchange.",
-      "description": "<b>Personal</b> - Your funds will be stored in a personal wallet. The wallet’s activity will be publicly available on the transaction scanner. <b>Exchange</b> - Your funds will be stored in a shared service wallet. The wallet’s activity will be hidden on the transaction scanner (similar to Binance, OKX, etc.).​"
+      "description": "<b>Personal</b> - Your funds will be stored in a personal wallet. The wallet’s activity will be publicly available on the transaction scanner. <b>Exchange</b> - Your funds will be stored in a shared service wallet. The wallet’s activity will be hidden on the transaction scanner (similar to Binance, OKX, etc.)."
     },
     "referral_program": {
       "title": "Referral program",
-      "description": "Earn bonuses in USDT for bringing new users to Well Wallet. Invite your friends and earn together."
+      "description": "Earn bonuses in USDT for bringing new users to Well Wallet. Invite your friends and earn together"
     },
     "currencies": "Cryptocurrencies supported by your wallet",
     "all": "All",
     "audit": {
       "title": "Security audit",
-      "description": "ur platform has undergone a comprehensive security audit conducted by a leading cybersecurity firm—Cobweb Security. The purpose of the audit was to assess the security of our services for processing cryptocurrency transactions. As a result of the audit, WellWallet achieved compliance with security standards:"
+      "description": "ur platform has undergone a comprehensive security audit conducted by a leading cybersecurity firm — Cobweb Security. The purpose of the audit was to assess the security of our services for processing cryptocurrency transactions. As a result of the audit, WellWallet achieved compliance with security standards:"
     },
-    "owasp": "a list of the most critical security threats to web applications, confirming that our system has been tested for key known vulnerabilities and complies with best practices in security.​",
-    "iso_27001": "an international standard for information security management that defines the requirements for establishing, implementing, and maintaining an information security management system.​",
-    "pci_dss": "a data security standard aimed at ensuring the protection of confidential information and the secure processing of transactions when dealing with digital assets and payment systems.​",
+    "owasp": "A list of the most critical security threats to web applications, confirming that our system has been tested for key known vulnerabilities and complies with best practices in security",
+    "iso_27001": "An international standard for information security management that defines the requirements for establishing, implementing, and maintaining an information security management system",
+    "pci_dss": "A data security standard aimed at ensuring the protection of confidential information and the secure processing of transactions when dealing with digital assets and payment systems",
     "details": "Details",
     "article": {
       "title": "Automatic AML checks for incoming transactions",
@@ -78,12 +78,12 @@
       "p2": "<b>AML (Anti-Money Laundering) checks</b> — is an important aspect of handling any financial transactions, both in traditional fiat systems and in cryptocurrency services. They help prevent the use of illegal funds and ensure transparency in operations. In our wallet, all incoming transactions undergo automatic AML checks to guarantee the security and legality of the funds and to prevent any discrediting of your wallet.",
       "subtitle": "How it works:",
       "list": {
-        "item1":"All incoming transactions are automatically checked for compliance with AML standards.",
-        "item2":"Transactions are confirmed only if they are initiated from real and legitimate sources.​",
-        "item3":"In the case of detecting high-risk transactions, the transaction is blocked for further analysis.​",
-        "item4":"Based on the AML report, you make the decision to reject or accept the funds.​"
+        "item1":"All incoming transactions are automatically checked for compliance with AML standards",
+        "item2":"Transactions are confirmed only if they are initiated from real and legitimate sources",
+        "item3":"In the case of detecting high-risk transactions, the transaction is blocked for further analysis",
+        "item4":"Based on the AML report, you make the decision to reject or accept the funds"
       },
-      "p3": "Our AML checks make your experience with cryptocurrencies safe and transparent."
+      "p3": "Our AML checks make your experience with cryptocurrencies safe and transparent"
     },
     "chat_message": "😃 Please select the network to which your wallet belongs for verification 👇",
     "about_us": "About us in the news"

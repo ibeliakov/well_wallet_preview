@@ -32,14 +32,14 @@ const Navigation: FC = () => {
       name: "FAQ",
       href: "/faq",
     },
-    {
+    /* {
       name: "Terms of Use",
       href: "/terms-of-use",
-    },
-    {
+    }, */
+    /* {
       name: "Privacy of policy",
       href: "/privacy-policy",
-    },
+    }, */
   ];
   return (
     <nav className={styles.list}>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import classNames from "classnames";
 import { Link } from "@/i18n/routing";
 import { FC } from "react";
-import { Partners, ArticlePreview } from "./component";
+import { /* Partners, */ ArticlePreview } from "./component";
 import { Container, SectionInfo } from "@/app/components";
 
 const Audit: FC = () => {
@@ -95,29 +95,14 @@ const Audit: FC = () => {
                 </div>
               </div>
               <ArticlePreview />
-              {/*  <div className={styles.article_preview}>
-                <div>
-                  <PhoneWithMenu activeBtn={6} className={styles.phone} />
-                </div>
-                <div className={styles.article_preview_chat}>
-                  <div className={styles.message}>{t("chat_message")}</div>
-                  <div className={styles.currencies}>
-                    {["TRC20", "ERC20", "BTC"].map((message, i) => (
-                      <div className={styles.currency} key={i}>
-                        {message}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div> */}
             </div>
           </Container>
         </div>
       </Container>
-      <Container className={styles.container}>
+      {/* <Container className={styles.container}>
         <h3 className={styles.partners_title}>{t("about_us")}</h3>
         <Partners />
-      </Container>
+      </Container> */}
     </section>
   );
 };

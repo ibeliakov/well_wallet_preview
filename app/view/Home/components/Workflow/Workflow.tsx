@@ -75,7 +75,7 @@ const Workflow: FC = () => {
         clearInterval(interval);
         return;
       }
-    }, 1000);
+    }, 500);
   }, [startAnimation]);
 
   return (

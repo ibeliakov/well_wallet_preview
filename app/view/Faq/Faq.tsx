@@ -6,6 +6,10 @@ import styles from "./Faq.module.css";
 import { Question } from "./components";
 import Image from "next/image";
 import { LINK_TO_SUPPORT } from "@/app/constants";
+import { Link } from "@/i18n/routing";
+
+const convertToLink = (link: string): string =>
+  link.match(/(((https?:\/\/)|(www\.))[^\s]+)/g) ? link : `http://${link}`;
 
 const Faq: FC = () => {
   const t = useTranslations("faq");
@@ -26,7 +30,21 @@ const Faq: FC = () => {
           <Question
             key={i}
             title={t(`question_${i + 1}.title`)}
-            description={t(`question_${i + 1}.description`)}
+            description={t.rich(`question_${i + 1}.description`, {
+              link: (chunks) => {
+                const values = Array.isArray(chunks) ? chunks : [chunks];
+                return values.map((value) => {
+                  if (typeof value === "string") {
+                    return (
+                      <Link target="_blank" href={convertToLink(value)}>
+                        {value}
+                      </Link>
+                    );
+                  }
+                  return chunks;
+                });
+              },
+            })}
             active={i === 0}
           />
         ))}
@@ -35,7 +53,7 @@ const Faq: FC = () => {
         <div>
           <h3 className={styles.leave_question}>{t("leave_question")}</h3>
           <p className={styles.leave_question_description}>
-            {t("leave_question_description")}
+            {t.rich("leave_question_description")}
           </p>
         </div>
         <div>

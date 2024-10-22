@@ -1,13 +1,13 @@
 {
   "tariffs": {
-    "title": "Тарифы и комиссии",
-    "description": "Мы предлагаем прозрачные и конкурентные тарифы на пополнение, вывод и обмен криптовалют. В зависимости от \nиспользуемой сети и актива, комиссии могут варьироваться, чтобы обеспечить оптимальные условия для ваших транзакций.",
-    "assets": "Актив",
-    "name": "Наименование",
-    "commission_replenishment": "Комиссия при пополнении",
-    "commission_withdrawal": "Комиссия при выводе",
-    "limits_replenishment": "Лимиты пополнения",
-    "limits_withdrawal": "Лимиты вывода",
-    "soon": "Скоро"
+    "title": "Tariffs and fees",
+    "description": "We offer transparent and competitive fees for deposits, withdrawals, and cryptocurrency exchanges. Depending on \nthe network and asset used, fees may vary to ensure optimal conditions for your transactions",
+    "assets": "Asset",
+    "name": "Title",
+    "commission_replenishment": "Deposit fee",
+    "commission_withdrawal": "Withdrawal fee",
+    "limits_replenishment": "Deposit limits",
+    "limits_withdrawal": "Withdrawal limits",
+    "soon": "Soon"
   }
 }

@@ -14,10 +14,10 @@ const Tariffs: FC = () => {
         <SectionInfo title={t("title")} description={t("description")} />
         <TariffsTable />
       </div>
-      <div className={classNames(styles.wrap, styles.white)}>
+      {/*  <div className={classNames(styles.wrap, styles.white)}>
         <SectionInfo title={t("title")} description={t("description")} />
         <TariffsTable isBlack />
-      </div>
+      </div> */}
     </>
   );
 };

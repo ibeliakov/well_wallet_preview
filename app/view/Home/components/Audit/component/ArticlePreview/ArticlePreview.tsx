@@ -49,7 +49,7 @@ const ArticlePreview: FC = () => {
         clearInterval(interval);
         return;
       }
-    }, 1000);
+    }, 500);
   }, [startAnimation]);
   return (
     <div className={styles.article_preview}>

@@ -1,12 +1,12 @@
 "use client";
-import { FC, useCallback, useState } from "react";
+import { FC, useCallback, useState, ReactNode } from "react";
 
 import styles from "./Question.module.css";
 import classNames from "classnames";
 
 type Props = Readonly<{
   title: string;
-  description: string;
+  description: ReactNode;
   active?: boolean;
 }>;
 
